@@ -41,10 +41,6 @@ That is all. The installer:
 
 No root, no Python, no package managers. The web app needs [Node.js](https://nodejs.org) 20 or newer; everything else works without it.
 
-## Follow the story
-
-See the whole course through one developer's eyes: [the story of Maya](https://github.com/mikegorelikoff/unroad/wiki/00-Story-Meet-Maya), a developer on a TypeScript online store, from install to rolling the practices out to her team. Every prompt she sends, what the agent answers, the files that appear and the checks that pass.
-
 ## Your first ten minutes
 
 1. Open your agent (Claude Code, Codex or any agent that supports Agent Skills) in a repository you work on.
@@ -76,7 +72,7 @@ Come back any time with `/ur-learn`. Your progress is saved, so a new session pi
 | 09 | **Harness and delivery** | guides and sensors, agents in CI, traceable commits, parallel agents |
 | 10 | **Leading the change** | a story with evidence, pilots, working agreements, coaching, AI policy, metrics, team skills |
 
-Every topic links to the best material on the subject: official documentation, standards and practical guides. Read any lesson in full in the [wiki](https://github.com/mikegorelikoff/unroad/wiki/Curriculum).
+Every topic links to the best material on the subject: official documentation, standards and practical guides. The programme outline is in the [wiki](https://github.com/mikegorelikoff/unroad/wiki/Curriculum); the lessons themselves are in the course.
 
 ## How a topic works
 
@@ -159,7 +155,7 @@ Add `--purge` to delete your progress as well.
 
 **Something broke.** Type `/ur-doctor` in your agent. It finds what is wrong and fixes what it safely can.
 
-More detail: [the guide](GUIDE.md) and the [wiki](https://github.com/mikegorelikoff/unroad/wiki), which has every lesson in full, a glossary and the whole curriculum.
+More detail: [the guide](GUIDE.md) and the [wiki](https://github.com/mikegorelikoff/unroad/wiki).
 
 ## License
 
