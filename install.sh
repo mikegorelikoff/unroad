@@ -13,6 +13,7 @@
 #   --no-web            skip the web app
 #   --no-skills         skip the skills
 #   --no-agents-md      do not add the unroad section to ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md
+#   --no-hooks          do not add unroad's agent hooks (they protect your progress and keep it recorded)
 #   --from-source       build from this checkout instead of downloading
 #   --uninstall         remove ur, the web app and the skills (keeps your progress)
 #   --purge             with --uninstall: also delete ~/.unroad (your progress)
@@ -33,6 +34,7 @@ TARGET_DIR=""
 WITH_WEB=1
 WITH_SKILLS=1
 WITH_AGENTS_MD=1
+WITH_HOOKS=1
 FROM_SOURCE=0
 UNINSTALL=0
 PURGE=0
@@ -72,11 +74,12 @@ while [ $# -gt 0 ]; do
     --no-web) WITH_WEB=0; shift ;;
     --no-skills) WITH_SKILLS=0; shift ;;
     --no-agents-md) WITH_AGENTS_MD=0; shift ;;
+    --no-hooks) WITH_HOOKS=0; shift ;;
     --from-source) FROM_SOURCE=1; shift ;;
     --uninstall) UNINSTALL=1; shift ;;
     --purge) PURGE=1; shift ;;
     --print-target) PRINT_TARGET=1; shift ;;
-    -h | --help) sed -n '2,23p' "$0" 2>/dev/null | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -h | --help) sed -n '2,24p' "$0" 2>/dev/null | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) die "unknown option '$1' (see --help)" ;;
   esac
 done
@@ -126,6 +129,7 @@ if [ "$UNINSTALL" = 1 ]; then
     done
     "$DEST/ur" gui --stop >/dev/null 2>&1 || true
     if "$DEST/ur" agents-md --global --remove >/dev/null 2>&1; then ok "agents" "removed the unroad section from your agent instructions"; fi
+    if "$DEST/ur" hooks --global --remove >/dev/null 2>&1; then ok "hooks" "removed unroad's agent hooks"; fi
     rm -f "$DEST/ur"; ok "ur" "removed $(short "$DEST/ur")"
   else
     warn "ur" "not found in $(short "$DEST")"
@@ -289,6 +293,9 @@ if [ "$WITH_SKILLS" = 1 ]; then
   done
 fi
 
+if [ "$WITH_SKILLS" = 1 ] && [ "$WITH_AGENTS_MD" = 0 ]; then
+  "$DEST/ur" agents-md --global --decline >/dev/null 2>&1 || true
+fi
 if [ "$WITH_SKILLS" = 1 ] && [ "$WITH_AGENTS_MD" = 1 ]; then
   if "$DEST/ur" agents-md --help >/dev/null 2>&1; then
     if out=$("$DEST/ur" agents-md --global 2>&1); then
@@ -298,6 +305,21 @@ if [ "$WITH_SKILLS" = 1 ] && [ "$WITH_AGENTS_MD" = 1 ]; then
     fi
   else
     info "agents" "this release cannot manage agent instructions yet; skipped"
+  fi
+fi
+
+if [ "$WITH_SKILLS" = 1 ]; then
+  if "$DEST/ur" hooks --help >/dev/null 2>&1; then
+    if [ "$WITH_HOOKS" = 0 ]; then
+      "$DEST/ur" hooks --global --decline >/dev/null 2>&1 || true
+      info "hooks" "skipped (--no-hooks)"
+    elif out=$("$DEST/ur" hooks --global 2>&1); then
+      ok "hooks" "agent hooks keep your progress recorded and protected"
+    else
+      warn "hooks" "could not install agent hooks: $(printf '%s' "$out" | tail -n 1)"
+    fi
+  else
+    info "hooks" "this release has no agent hooks yet; skipped"
   fi
 fi
 

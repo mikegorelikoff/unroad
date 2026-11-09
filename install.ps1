@@ -8,6 +8,7 @@
 #   UR_AGENT         claude, codex or all (default: detected)
 #   UR_NO_WEB        set to 1 to skip the web app
 #   UR_NO_AGENTS_MD  set to 1 to leave ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md untouched
+#   UR_NO_HOOKS      set to 1 to skip unroad's agent hooks
 #   GITHUB_TOKEN     token for private or internal repositories (or log in with gh)
 #
 # Every archive is checked against the release's SHA256SUMS before anything is installed.
@@ -125,6 +126,13 @@ try {
       if ($LASTEXITCODE -eq 0) { Ok 'agents' 'managed unroad section in your agent instructions (CLAUDE.md, AGENTS.md)' } else { Warn 'agents' 'could not update agent instructions' }
     } else { Info 'agents' 'this release cannot manage agent instructions yet; skipped' }
   }
+
+  & $ur hooks --help *> $null
+  if ($LASTEXITCODE -eq 0) {
+    if ($env:UR_NO_HOOKS -eq '1') { & $ur hooks --global --decline *> $null; Info 'hooks' 'skipped (UR_NO_HOOKS)' }
+    else { & $ur hooks --global | Out-Null; if ($LASTEXITCODE -eq 0) { Ok 'hooks' 'agent hooks keep your progress recorded and protected' } else { Warn 'hooks' 'could not install agent hooks' } }
+  } else { Info 'hooks' 'this release has no agent hooks yet; skipped' }
+  if ($env:UR_NO_AGENTS_MD -eq '1') { & $ur agents-md --global --decline *> $null }
 
   if (Get-Command node -ErrorAction SilentlyContinue) { Ok 'node' "$(node --version) for the web app" }
   else { Warn 'node' 'not found; the web app needs Node.js 20+ (https://nodejs.org)' }
