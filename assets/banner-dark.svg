@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="unroad: learn to build with AI agents, inside your agent">
+  <rect width="1280" height="320" fill="#0B0B0C"/>
+  <g stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" fill="none">
+    <path d="M760 90 C 860 90, 860 160, 960 160"/><path d="M760 230 C 860 230, 860 160, 960 160"/>
+    <path d="M960 160 C 1060 160, 1060 90, 1160 90"/><path d="M960 160 C 1060 160, 1060 230, 1160 230"/>
+  </g>
+  <rect x="690" y="70" width="140" height="40" rx="9" fill="#0B0B0C" stroke="#A1A1AA" stroke-width="1.2"/>
+  <rect x="690" y="210" width="140" height="40" rx="9" fill="#0B0B0C" stroke="#A1A1AA" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <rect x="900" y="132" width="120" height="56" rx="12" fill="#FAFAF9"/>
+  <rect x="1100" y="70" width="140" height="40" rx="9" fill="#2A1608" stroke="#F97316" stroke-width="2"/>
+  <rect x="1100" y="210" width="140" height="40" rx="9" fill="#0B0B0C" stroke="#A1A1AA" stroke-width="1.2"/>
+  <circle cx="706" cy="90" r="3" fill="#F97316"/><circle cx="1116" cy="90" r="3" fill="#F97316"/><circle cx="1116" cy="230" r="3" fill="#F97316"/>
+  <text x="96" y="168" font-family="Onest, Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="96" font-weight="600" letter-spacing="-3" fill="#FAFAF9">unroad</text>
+  <circle cx="392" cy="157" r="10" fill="#F97316"/>
+  <text x="100" y="222" font-family="Onest, Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="24" fill="#A1A1AA">Learn to build with AI agents, inside your agent.</text>
+</svg>
