@@ -7,6 +7,7 @@
 #   UR_INSTALL_DIR   where to put ur.exe (default: %LOCALAPPDATA%\unroad\bin)
 #   UR_AGENT         claude, codex or all (default: detected)
 #   UR_NO_WEB        set to 1 to skip the web app
+#   UR_NO_AGENTS_MD  set to 1 to leave ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md untouched
 #   GITHUB_TOKEN     token for private or internal repositories (or log in with gh)
 #
 # Every archive is checked against the release's SHA256SUMS before anything is installed.
@@ -116,6 +117,14 @@ try {
     }
   }
   foreach ($d in $dirs) { & $ur install --target $d | Out-Null; if ($LASTEXITCODE -ne 0) { Fail "ur install --target $d failed" }; Ok 'skills' "-> $d" }
+
+  if ($env:UR_NO_AGENTS_MD -ne '1') {
+    & $ur agents-md --help *> $null
+    if ($LASTEXITCODE -eq 0) {
+      & $ur agents-md --global | Out-Null
+      if ($LASTEXITCODE -eq 0) { Ok 'agents' 'managed unroad section in your agent instructions (CLAUDE.md, AGENTS.md)' } else { Warn 'agents' 'could not update agent instructions' }
+    } else { Info 'agents' 'this release cannot manage agent instructions yet; skipped' }
+  }
 
   if (Get-Command node -ErrorAction SilentlyContinue) { Ok 'node' "$(node --version) for the web app" }
   else { Warn 'node' 'not found; the web app needs Node.js 20+ (https://nodejs.org)' }

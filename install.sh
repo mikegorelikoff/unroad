@@ -12,6 +12,7 @@
 #   --target <dir>      install the skills into this folder instead
 #   --no-web            skip the web app
 #   --no-skills         skip the skills
+#   --no-agents-md      do not add the unroad section to ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md
 #   --from-source       build from this checkout instead of downloading
 #   --uninstall         remove ur, the web app and the skills (keeps your progress)
 #   --purge             with --uninstall: also delete ~/.unroad (your progress)
@@ -31,6 +32,7 @@ AGENT=""
 TARGET_DIR=""
 WITH_WEB=1
 WITH_SKILLS=1
+WITH_AGENTS_MD=1
 FROM_SOURCE=0
 UNINSTALL=0
 PURGE=0
@@ -69,11 +71,12 @@ while [ $# -gt 0 ]; do
     --target) TARGET_DIR="${2:?--target needs a folder}"; shift 2 ;;
     --no-web) WITH_WEB=0; shift ;;
     --no-skills) WITH_SKILLS=0; shift ;;
+    --no-agents-md) WITH_AGENTS_MD=0; shift ;;
     --from-source) FROM_SOURCE=1; shift ;;
     --uninstall) UNINSTALL=1; shift ;;
     --purge) PURGE=1; shift ;;
     --print-target) PRINT_TARGET=1; shift ;;
-    -h | --help) sed -n '2,24p' "$0" 2>/dev/null | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -h | --help) sed -n '2,23p' "$0" 2>/dev/null | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) die "unknown option '$1' (see --help)" ;;
   esac
 done
@@ -122,6 +125,7 @@ if [ "$UNINSTALL" = 1 ]; then
       else warn "skills" "nothing to remove in $(short "$d")"; fi
     done
     "$DEST/ur" gui --stop >/dev/null 2>&1 || true
+    if "$DEST/ur" agents-md --global --remove >/dev/null 2>&1; then ok "agents" "removed the unroad section from your agent instructions"; fi
     rm -f "$DEST/ur"; ok "ur" "removed $(short "$DEST/ur")"
   else
     warn "ur" "not found in $(short "$DEST")"
@@ -283,6 +287,18 @@ if [ "$WITH_SKILLS" = 1 ]; then
     n=$(printf '%s\n' "$out" | grep -oE 'ur-[a-z]+' | sort -u | wc -l | tr -d ' ')
     ok "skills" "${n:-6} skills → $(short "$d")"
   done
+fi
+
+if [ "$WITH_SKILLS" = 1 ] && [ "$WITH_AGENTS_MD" = 1 ]; then
+  if "$DEST/ur" agents-md --help >/dev/null 2>&1; then
+    if out=$("$DEST/ur" agents-md --global 2>&1); then
+      ok "agents" "managed unroad section in your agent instructions (CLAUDE.md, AGENTS.md)"
+    else
+      warn "agents" "could not update agent instructions: $(printf '%s' "$out" | tail -n 1)"
+    fi
+  else
+    info "agents" "this release cannot manage agent instructions yet; skipped"
+  fi
 fi
 
 if command -v node >/dev/null 2>&1; then

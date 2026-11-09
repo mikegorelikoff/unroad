@@ -36,7 +36,8 @@ That is all. The installer:
 - downloads the engine your agent uses (`ur`, one small binary) and checks it against the release's SHA-256 sums before installing anything;
 - puts it in `~/.local/bin` (Windows: `%LOCALAPPDATA%\unroad\bin`, added to your PATH);
 - installs the roadmap web app into `~/.unroad/web`;
-- installs the six skills into every agent it finds: Claude Code (`~/.claude/skills`) and Codex (`~/.codex/skills`).
+- installs the six skills into every agent it finds: Claude Code (`~/.claude/skills`) and Codex (`~/.codex/skills`);
+- adds a short, clearly marked unroad section to your agents' instructions so every session knows how to work with it (your own text is never touched; `--no-agents-md` skips it).
 
 No root, no Python, no package managers. The web app needs [Node.js](https://nodejs.org) 20 or newer; everything else works without it.
 
@@ -64,7 +65,7 @@ Come back any time with `/ur-learn`. Your progress is saved, so a new session pi
 | 09 | **Harness and delivery** | guides and sensors, agents in CI, traceable commits, parallel agents |
 | 10 | **Leading the change** | a story with evidence, pilots, working agreements, coaching, AI policy, metrics, team skills |
 
-Every topic links to the best material on the subject: official documentation, standards and practical guides.
+Every topic links to the best material on the subject: official documentation, standards and practical guides. Read any lesson in full in the [wiki](https://github.com/mikegorelikoff/unroad/wiki/Curriculum).
 
 ## How a topic works
 
@@ -133,8 +134,8 @@ Add `--purge` to delete your progress as well.
 
 **Something broke.** Type `/ur-doctor` in your agent. It finds what is wrong and fixes what it safely can.
 
-More detail: [the guide](GUIDE.md).
+More detail: [the guide](GUIDE.md) and the [wiki](https://github.com/mikegorelikoff/unroad/wiki), which has every lesson in full, a glossary and the whole curriculum.
 
 ## License
 
-[Apache-2.0](LICENSE). Built by [unmerged](https://www.unmerged.tech/).
+[Apache-2.0](LICENSE).

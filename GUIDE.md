@@ -17,17 +17,22 @@ curl -fsSL https://github.com/mikegorelikoff/unroad/releases/latest/download/ins
 | `--target <dir>` | install the skills into this folder instead, for example a project's `.agents/skills` |
 | `--bin <dir>` | where to put `ur` (default: `~/.local/bin`) |
 | `--no-web` | skip the web app |
-| `--no-skills` | install only the `ur` command |
+| `--no-skills` | install only the engine |
+| `--no-agents-md` | do not add the unroad section to your agents' global instructions |
 | `--uninstall` | remove `ur`, the web app and the skills; keep progress |
 | `--purge` | with `--uninstall`, also delete `~/.unroad` |
 
-Environment variables: `UR_VERSION`, `UR_INSTALL_DIR`, `UNROAD_HOME` (default `~/.unroad`). On Windows set `UR_VERSION`, `UR_INSTALL_DIR`, `UR_AGENT` or `UR_NO_WEB=1` before running the PowerShell command.
+Environment variables: `UR_VERSION`, `UR_INSTALL_DIR`, `UNROAD_HOME` (default `~/.unroad`). On Windows set `UR_VERSION`, `UR_INSTALL_DIR`, `UR_AGENT`, `UR_NO_WEB=1` or `UR_NO_AGENTS_MD=1` before running the PowerShell command.
+
+### The managed instructions section
+
+So that every agent session knows how to work with unroad, the installer adds a short section to your agents' global instructions (`~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md`), and `/ur-start` adds the same section to your lab project's `AGENTS.md` (with an `@AGENTS.md` import in `CLAUDE.md` so Claude Code reads it). The section sits between `<!-- unroad:begin -->` and `<!-- unroad:end -->` markers. Everything you wrote outside the markers stays untouched; the section is refreshed on update and removed on uninstall. `/ur-doctor` tells you if it is missing or outdated.
 
 Supported platforms: macOS (Apple Silicon and Intel), Linux (x86_64 and arm64, any distribution: the binary is static), Windows x64.
 
 ## How the mentor works
 
-unroad is built the way [unhooked](https://www.unmerged.tech/) runs agent skills:
+unroad runs its skills through a small harness:
 
 - **One step at a time.** A skill is a short list of steps. Your agent only ever sees the current step, so it cannot skip the quiz or rush the lab.
 - **Done is decided in code.** Each step lists gates. When the step is finished, the engine (`ur`, which your agent runs) checks the gates itself: a quiz answer was correct, a lab file has no placeholders left, a command exits 0. If a gate fails, the step stays open and you see why.
