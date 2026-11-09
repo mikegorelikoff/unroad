@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-label="Running a pilot: take a baseline of the same measures for six to eight weeks before, and commit the success criteria before day one; run a two to four week pilot with one team and one kind of work, inside guardrails for what agents may and may not do, human review on every pull request and no customer data in prompts; hold the review and apply the criteria as written: scale, adjust and run another timebox, or stop.">
+  <title>Running a pilot: take a baseline of the same measures for six to eight weeks before, and commit the success criteria before day one; run a two to four week pilot with one team and one kind of work, inside guardrails for what agents may and may not do, human review on every pull request and no customer data in prompts; hold the review and apply the criteria as written: scale, adjust and run another timebox, or stop.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5C5E64"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0F7A5F"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#B3263A"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#C4C4BE"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B0B0C"/></marker></defs>
+  <rect width="1200" height="500" fill="#FAFAF9"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#0B0B0C" font-weight="600" letter-spacing="-0.4">Run a pilot like an experiment</text>
+  <text x="48" y="88" font-size="17" fill="#5C5E64">Write the decision rules before day one, then apply them as written.</text>
+  <rect x="48" y="124" width="236" height="300" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="70" y="160" font-size="19" fill="#0B0B0C" font-weight="600">Baseline</text>
+  <text x="70" y="184" font-size="15" fill="#5C5E64">6 to 8 weeks before</text>
+  <circle cx="76" cy="211" r="3.5" fill="#F97316"/>
+  <text x="88" y="216" font-size="15" fill="#0B0B0C">PR opened to merge</text>
+  <circle cx="76" cy="237" r="3.5" fill="#F97316"/>
+  <text x="88" y="242" font-size="15" fill="#0B0B0C">review rounds</text>
+  <circle cx="76" cy="263" r="3.5" fill="#F97316"/>
+  <text x="88" y="268" font-size="15" fill="#0B0B0C">change fail rate</text>
+  <circle cx="76" cy="289" r="3.5" fill="#F97316"/>
+  <text x="88" y="294" font-size="15" fill="#0B0B0C">rework</text>
+  <circle cx="76" cy="315" r="3.5" fill="#F97316"/>
+  <text x="88" y="320" font-size="15" fill="#0B0B0C">developer pulse</text>
+  <rect x="64" y="352" width="204" height="56" rx="8" fill="#F3F3F0" stroke="#E4E4E0" stroke-width="1.2"/>
+  <text x="78" y="376" font-size="15" fill="#0B0B0C" font-weight="600">criteria committed</text>
+  <text x="78" y="398" font-size="15" fill="#5C5E64">before day one</text>
+  <rect x="326" y="124" width="400" height="300" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="2"/>
+  <text x="348" y="160" font-size="19" fill="#0B0B0C" font-weight="600">Pilot</text>
+  <text x="348" y="184" font-size="15" fill="#5C5E64">one team, one kind of work</text>
+  <path d="M348 216 H704" fill="none" stroke="#C4C4BE" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M348.0 210 V222" fill="none" stroke="#5C5E64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M466.6666666666667 210 V222" fill="none" stroke="#5C5E64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M585.3333333333334 210 V222" fill="none" stroke="#5C5E64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M704.0 210 V222" fill="none" stroke="#5C5E64" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="348" y="242" font-size="15" fill="#5C5E64">2 to 4 weeks, weekly 15-minute check-in</text>
+  <text x="348" y="276" font-size="15" fill="#0B0B0C" font-weight="600">Guardrails</text>
+  <text x="348" y="304" font-size="15" fill="#0F7A5F" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">agents may</text>
+  <text x="456" y="304" font-size="15" fill="#0B0B0C">read, test, open draft PRs</text>
+  <text x="348" y="332" font-size="15" fill="#B3263A" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">may not</text>
+  <text x="456" y="332" font-size="15" fill="#0B0B0C">push to main, read secrets, deploy</text>
+  <text x="348" y="360" font-size="15" fill="#C2410C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">review</text>
+  <text x="456" y="360" font-size="15" fill="#0B0B0C">a human on every pull request</text>
+  <text x="348" y="388" font-size="15" fill="#C2410C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">data</text>
+  <text x="456" y="388" font-size="15" fill="#0B0B0C">no customer data in prompts</text>
+  <rect x="774" y="124" width="172" height="300" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="794" y="160" font-size="19" fill="#0B0B0C" font-weight="600">Review</text>
+  <text x="794" y="188" font-size="15" fill="#5C5E64">data against the</text>
+  <text x="794" y="210" font-size="15" fill="#5C5E64">baseline, then</text>
+  <text x="794" y="232" font-size="15" fill="#5C5E64">apply the criteria</text>
+  <text x="794" y="254" font-size="15" fill="#5C5E64">as written</text>
+  <path d="M288 274.0 H323" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M730 274.0 H771" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="984" y="124" width="168" height="88" rx="12" fill="#E6F3EE"/>
+  <text x="1000" y="154" font-size="18" fill="#0F7A5F" font-weight="600">Scale</text>
+  <text x="1000" y="178" font-size="15" fill="#0B0B0C">faster, and</text>
+  <text x="1000" y="198" font-size="15" fill="#0B0B0C">rework no worse</text>
+  <path d="M950 274.0 C 970 274.0, 962 168.0, 981 168.0" fill="none" stroke="#0F7A5F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-pass_)"/>
+  <rect x="984" y="230" width="168" height="88" rx="12" fill="#FFF1E6"/>
+  <text x="1000" y="260" font-size="18" fill="#C2410C" font-weight="600">Adjust</text>
+  <text x="1000" y="284" font-size="15" fill="#0B0B0C">mixed: change</text>
+  <text x="1000" y="304" font-size="15" fill="#0B0B0C">one thing, rerun</text>
+  <path d="M950 274.0 C 970 274.0, 962 274.0, 981 274.0" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-accent)"/>
+  <rect x="984" y="336" width="168" height="88" rx="12" fill="#FBECEE"/>
+  <text x="1000" y="366" font-size="18" fill="#B3263A" font-weight="600">Stop</text>
+  <text x="1000" y="390" font-size="15" fill="#0B0B0C">a breach, an</text>
+  <text x="1000" y="410" font-size="15" fill="#0B0B0C">incident, no gain</text>
+  <path d="M950 274.0 C 970 274.0, 962 380.0, 981 380.0" fill="none" stroke="#B3263A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-fail)"/>
+  <path d="M1156 274.0 H1178 V464 H526.0 V427" fill="none" stroke="#F97316" stroke-width="1.6" stroke-dasharray="5 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-accent)"/>
+  <text x="542.0" y="456" font-size="15" fill="#C2410C" font-weight="600">another timebox, same criteria</text>
+  </g>
+</svg>

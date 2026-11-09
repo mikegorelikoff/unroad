@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stage 07, Quality: Tests, review and evals are the sensors that let you trust agent output. 4 topics.">
+  <title>Stage 07, Quality: Tests, review and evals are the sensors that let you trust agent output. 4 topics.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="300" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="64" y="82" font-size="18" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">Stage 07</text>
+  <text x="64" y="138" font-size="46" fill="#FAFAF9" font-weight="600" letter-spacing="-1">Quality</text>
+  <text x="64" y="182" font-size="20" fill="#A1A1AA">Tests, review and evals are the sensors that let you trust agent</text>
+  <text x="64" y="210" font-size="20" fill="#A1A1AA">output.</text>
+  <circle cx="68" cy="255" r="4" fill="#F97316"/>
+  <text x="82" y="260" font-size="15" fill="#FAFAF9" font-weight="600">4 topics</text>
+  <text x="152.27499999999998" y="260" font-size="15" fill="#A1A1AA">foundation to expert</text>
+  <rect x="760" y="36" width="392" height="228" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="836" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="866" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="896" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="926" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="956" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="986" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1016" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1046" y="90" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="836" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="866" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="896" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="926" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="956" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="986" y="120" width="22" height="22" rx="5" fill="#2B1417" stroke="#F27A7F" stroke-width="1.2"/>
+  <rect x="1016" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1046" y="120" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="836" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="866" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="896" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="926" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="956" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="986" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1016" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1046" y="150" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="836" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="866" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="896" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="926" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="956" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="986" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1016" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="1046" y="180" width="22" height="22" rx="5" fill="#0E241E" stroke="#4CC9A0" stroke-width="1.2"/>
+  <rect x="980" y="114" width="34" height="34" rx="8" fill="none" stroke="#F97316" stroke-width="2"/>
+  <text x="836" y="236" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">tests, review, evals</text>
+  </g>
+</svg>

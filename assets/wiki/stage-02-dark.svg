@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stage 02, Prompting and context: Give the agent the smallest set of high-signal information that gets the right result. 4 topics.">
+  <title>Stage 02, Prompting and context: Give the agent the smallest set of high-signal information that gets the right result. 4 topics.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="300" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="64" y="82" font-size="18" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">Stage 02</text>
+  <text x="64" y="138" font-size="46" fill="#FAFAF9" font-weight="600" letter-spacing="-1">Prompting and context</text>
+  <text x="64" y="182" font-size="20" fill="#A1A1AA">Give the agent the smallest set of high-signal information that</text>
+  <text x="64" y="210" font-size="20" fill="#A1A1AA">gets the right result.</text>
+  <circle cx="68" cy="255" r="4" fill="#F97316"/>
+  <text x="82" y="260" font-size="15" fill="#FAFAF9" font-weight="600">4 topics</text>
+  <text x="152.27499999999998" y="260" font-size="15" fill="#A1A1AA">foundation to practitioner</text>
+  <rect x="760" y="36" width="392" height="228" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="800" y="120" width="312" height="44" rx="10" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <rect x="803" y="124" width="40" height="36" rx="6" fill="#3F3F46"/>
+  <rect x="847" y="124" width="52" height="36" rx="6" fill="#3F3F46"/>
+  <rect x="903" y="124" width="44" height="36" rx="6" fill="#3F3F46"/>
+  <rect x="951" y="124" width="66" height="36" rx="6" fill="#A1A1AA" opacity="0.9"/>
+  <rect x="1021" y="124" width="60" height="36" rx="6" fill="#F97316" opacity="0.9"/>
+  <path d="M1112 98 V186" fill="none" stroke="#F97316" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1112" y="88" font-size="15" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">limit</text>
+  <text x="800" y="198" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">context window</text>
+  </g>
+</svg>

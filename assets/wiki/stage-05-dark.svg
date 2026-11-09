@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stage 05, BMAD Method: An open agile framework where agent roles run analysis, planning, solutioning and implementation. 5 topics.">
+  <title>Stage 05, BMAD Method: An open agile framework where agent roles run analysis, planning, solutioning and implementation. 5 topics.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="300" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="64" y="82" font-size="18" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">Stage 05</text>
+  <text x="64" y="138" font-size="46" fill="#FAFAF9" font-weight="600" letter-spacing="-1">BMAD Method</text>
+  <text x="64" y="182" font-size="20" fill="#A1A1AA">An open agile framework where agent roles run analysis, planning,</text>
+  <text x="64" y="210" font-size="20" fill="#A1A1AA">solutioning and implementation.</text>
+  <circle cx="68" cy="255" r="4" fill="#F97316"/>
+  <text x="82" y="260" font-size="15" fill="#FAFAF9" font-weight="600">5 topics</text>
+  <text x="152.27499999999998" y="260" font-size="15" fill="#A1A1AA">practitioner to expert</text>
+  <rect x="760" y="36" width="392" height="228" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="812" y="170" width="64" height="60" rx="10" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="844" y="198" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">1</text>
+  <rect x="892" y="136" width="64" height="94" rx="10" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="924" y="164" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">2</text>
+  <rect x="972" y="102" width="64" height="128" rx="10" fill="#2A1608" stroke="#F97316" stroke-width="1.2"/>
+  <text x="1004" y="130" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">3</text>
+  <rect x="1052" y="68" width="64" height="162" rx="10" fill="#FAFAF9"/>
+  <text x="1084" y="96" font-size="17" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">4</text>
+  </g>
+</svg>

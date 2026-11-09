@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="540" viewBox="0 0 1200 540" role="img" aria-label="The four-phase build loop and where each mistake is cheapest to catch. Explore reads without writing and catches wrong assumptions about the code for the cost of a sentence. Plan proposes steps and checks you can edit and catches a wrong approach for the cost of an edited line. Implement makes one step and one check at a time, so a broken step costs a revert, then loops back for the next step. Verify runs the commands and shows their output, so a claim without evidence is fixed before review, not after merge.">
+  <title>The four-phase build loop and where each mistake is cheapest to catch. Explore reads without writing and catches wrong assumptions about the code for the cost of a sentence. Plan proposes steps and checks you can edit and catches a wrong approach for the cost of an edited line. Implement makes one step and one check at a time, so a broken step costs a revert, then loops back for the next step. Verify runs the commands and shows their output, so a claim without evidence is fixed before review, not after merge.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="540" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">Explore, plan, implement, verify</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">Each phase moves a kind of mistake to where it is cheap to fix.</text>
+  <rect x="48" y="150" width="258" height="96" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="70" y="190" font-size="20" fill="#FAFAF9" font-weight="600">Explore</text>
+  <text x="70" y="218" font-size="15" fill="#A1A1AA">read without writing</text>
+  <path d="M308 198.0 H327" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="48" y="290" font-size="15" fill="#A1A1AA">Catches</text>
+  <text x="48" y="314" font-size="15" fill="#FAFAF9" font-weight="600">wrong assumptions about the code</text>
+  <text x="48" y="354" font-size="15" fill="#A1A1AA">Fixing it here costs</text>
+  <text x="48" y="378" font-size="15" fill="#FAFAF9" font-weight="600">a sentence of correction</text>
+  <rect x="48" y="456" width="258" height="14" rx="6" fill="#A1A1AA" opacity="0.22"/>
+  <rect x="330" y="150" width="258" height="96" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="352" y="190" font-size="20" fill="#FAFAF9" font-weight="600">Plan</text>
+  <text x="352" y="218" font-size="15" fill="#A1A1AA">steps and checks you edit</text>
+  <path d="M590 198.0 H609" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="330" y="290" font-size="15" fill="#A1A1AA">Catches</text>
+  <text x="330" y="314" font-size="15" fill="#FAFAF9" font-weight="600">a wrong approach or a surprise file</text>
+  <text x="330" y="354" font-size="15" fill="#A1A1AA">Fixing it here costs</text>
+  <text x="330" y="378" font-size="15" fill="#FAFAF9" font-weight="600">an edited line in the plan</text>
+  <rect x="330" y="444" width="258" height="26" rx="6" fill="#A1A1AA" opacity="0.3"/>
+  <rect x="612" y="150" width="258" height="96" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="634" y="190" font-size="20" fill="#FAFAF9" font-weight="600">Implement</text>
+  <text x="634" y="218" font-size="15" fill="#A1A1AA">one step, one check</text>
+  <path d="M872 198.0 H891" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="612" y="290" font-size="15" fill="#A1A1AA">Catches</text>
+  <text x="612" y="314" font-size="15" fill="#FAFAF9" font-weight="600">a broken step while it is small</text>
+  <text x="612" y="354" font-size="15" fill="#A1A1AA">Fixing it here costs</text>
+  <text x="612" y="378" font-size="15" fill="#FAFAF9" font-weight="600">a reverted step</text>
+  <rect x="612" y="428" width="258" height="42" rx="6" fill="#A1A1AA" opacity="0.38"/>
+  <rect x="894" y="150" width="258" height="96" rx="12" fill="#2A1608" stroke="#F97316" stroke-width="2"/>
+  <text x="916" y="190" font-size="20" fill="#FAFAF9" font-weight="600">Verify</text>
+  <text x="916" y="218" font-size="15" fill="#A1A1AA">commands and their output</text>
+  <text x="894" y="290" font-size="15" fill="#A1A1AA">Catches</text>
+  <text x="894" y="314" font-size="15" fill="#FAFAF9" font-weight="600">a claim without evidence</text>
+  <text x="894" y="354" font-size="15" fill="#A1A1AA">Fixing it here costs</text>
+  <text x="894" y="378" font-size="15" fill="#FB923C" font-weight="600">a fix before review, not after merge</text>
+  <rect x="894" y="406" width="258" height="64" rx="6" fill="#A1A1AA" opacity="0.45999999999999996"/>
+  <path d="M48 470 H1152" fill="none" stroke="#3F3F46" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="500" font-size="15" fill="#A1A1AA">The later a mistake is caught, the more it costs</text>
+  <path d="M1023.0 146 V126 H741.0 V147" fill="none" stroke="#F97316" stroke-width="1.8" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-accent)"/>
+  <text x="882.0" y="118" font-size="15" fill="#FB923C" font-weight="600" text-anchor="middle">next step</text>
+  <text x="1152" y="500" font-size="15" fill="#A1A1AA" text-anchor="end">If you can describe the diff in one sentence, skip to implement, and still verify.</text>
+  </g>
+</svg>

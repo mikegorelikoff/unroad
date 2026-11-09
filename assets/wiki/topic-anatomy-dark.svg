@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-label="The five steps of every topic, in order, each checked in code before the next: lesson (the lesson was shown), quiz (every answer is correct), lab (the lab checks pass on disk), reflection (at least 30 characters in your own words) and review (every checklist item confirmed).">
+  <title>The five steps of every topic, in order, each checked in code before the next: lesson (the lesson was shown), quiz (every answer is correct), lab (the lab checks pass on disk), reflection (at least 30 characters in your own words) and review (every checklist item confirmed).</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="430" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">Anatomy of a topic</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">Five steps. Each one is checked in code before the next one opens.</text>
+  <path d="M158 150 H1038" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M184 150 H352" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <circle cx="158" cy="150" r="20" fill="#141416" stroke="#3F3F46" stroke-width="1.5"/>
+  <text x="158" y="156" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">1</text>
+  <text x="158" y="206" font-size="20" fill="#FAFAF9" font-weight="600" text-anchor="middle">Lesson</text>
+  <text x="158" y="232" font-size="15" fill="#A1A1AA" text-anchor="middle">Explained with your</text>
+  <text x="158" y="253" font-size="15" fill="#A1A1AA" text-anchor="middle">project as the example</text>
+  <rect x="56" y="278" width="204" height="96" rx="12" fill="#0E241E"/>
+  <path d="M151 300 L155.66666666666666 304.9 L165 295.1" fill="none" stroke="#4CC9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="158" y="330" font-size="15" fill="#FAFAF9" font-weight="600" text-anchor="middle">lesson shown</text>
+  <text x="158" y="354" font-size="15" fill="#4CC9A0" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">lesson-served</text>
+  <path d="M404 150 H572" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <circle cx="378" cy="150" r="20" fill="#141416" stroke="#3F3F46" stroke-width="1.5"/>
+  <text x="378" y="156" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">2</text>
+  <text x="378" y="206" font-size="20" fill="#FAFAF9" font-weight="600" text-anchor="middle">Quiz</text>
+  <text x="378" y="232" font-size="15" fill="#A1A1AA" text-anchor="middle">Two questions,</text>
+  <text x="378" y="253" font-size="15" fill="#A1A1AA" text-anchor="middle">one at a time</text>
+  <rect x="276" y="278" width="204" height="96" rx="12" fill="#0E241E"/>
+  <path d="M371 300 L375.6666666666667 304.9 L385 295.1" fill="none" stroke="#4CC9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="378" y="330" font-size="15" fill="#FAFAF9" font-weight="600" text-anchor="middle">every answer correct</text>
+  <text x="378" y="354" font-size="15" fill="#4CC9A0" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">quiz-complete</text>
+  <path d="M624 150 H792" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <circle cx="598" cy="150" r="20" fill="#F97316"/>
+  <text x="598" y="156" font-size="17" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">3</text>
+  <text x="598" y="206" font-size="20" fill="#FAFAF9" font-weight="600" text-anchor="middle">Lab</text>
+  <text x="598" y="232" font-size="15" fill="#A1A1AA" text-anchor="middle">Real files in your</text>
+  <text x="598" y="253" font-size="15" fill="#A1A1AA" text-anchor="middle">own repository</text>
+  <rect x="496" y="278" width="204" height="96" rx="12" fill="#0E241E"/>
+  <path d="M591 300 L595.6666666666666 304.9 L605 295.1" fill="none" stroke="#4CC9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="598" y="330" font-size="15" fill="#FAFAF9" font-weight="600" text-anchor="middle">lab checks pass on disk</text>
+  <text x="598" y="354" font-size="15" fill="#4CC9A0" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">lab-passes</text>
+  <path d="M844 150 H1012" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <circle cx="818" cy="150" r="20" fill="#141416" stroke="#3F3F46" stroke-width="1.5"/>
+  <text x="818" y="156" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">4</text>
+  <text x="818" y="206" font-size="20" fill="#FAFAF9" font-weight="600" text-anchor="middle">Reflection</text>
+  <text x="818" y="232" font-size="15" fill="#A1A1AA" text-anchor="middle">What you did and what</text>
+  <text x="818" y="253" font-size="15" fill="#A1A1AA" text-anchor="middle">you will do differently</text>
+  <rect x="716" y="278" width="204" height="96" rx="12" fill="#0E241E"/>
+  <path d="M811 300 L815.6666666666666 304.9 L825 295.1" fill="none" stroke="#4CC9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="818" y="330" font-size="15" fill="#FAFAF9" font-weight="600" text-anchor="middle">30+ characters</text>
+  <text x="818" y="354" font-size="15" fill="#4CC9A0" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">reflection-recorded</text>
+  <circle cx="1038" cy="150" r="20" fill="#141416" stroke="#3F3F46" stroke-width="1.5"/>
+  <text x="1038" y="156" font-size="17" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">5</text>
+  <text x="1038" y="206" font-size="20" fill="#FAFAF9" font-weight="600" text-anchor="middle">Review</text>
+  <text x="1038" y="232" font-size="15" fill="#A1A1AA" text-anchor="middle">A short checklist</text>
+  <text x="1038" y="253" font-size="15" fill="#A1A1AA" text-anchor="middle">you confirm honestly</text>
+  <rect x="936" y="278" width="204" height="96" rx="12" fill="#0E241E"/>
+  <path d="M1031 300 L1035.6666666666667 304.9 L1045 295.1" fill="none" stroke="#4CC9A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1038" y="330" font-size="15" fill="#FAFAF9" font-weight="600" text-anchor="middle">every item confirmed</text>
+  <text x="1038" y="354" font-size="15" fill="#4CC9A0" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">checklist-complete</text>
+  <text x="600" y="404" font-size="15" fill="#A1A1AA" text-anchor="middle">If a check fails you get the exact reason and stay on the step until it passes.</text>
+  </g>
+</svg>

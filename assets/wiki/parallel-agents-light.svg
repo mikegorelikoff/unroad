@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="Parallel agents with git worktrees. Two branches leave main, each in its own worktree directory with its own agent, sharing one .git store. Merge them back one at a time: merge task-a and run the tests on main; rebase task-b onto the new main and run its tests in the worktree; merge task-b and run the tests again.">
+  <title>Parallel agents with git worktrees. Two branches leave main, each in its own worktree directory with its own agent, sharing one .git store. Merge them back one at a time: merge task-a and run the tests on main; rebase task-b onto the new main and run its tests in the worktree; merge task-b and run the tests again.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5C5E64"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0F7A5F"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#B3263A"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#C4C4BE"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B0B0C"/></marker></defs>
+  <rect width="1200" height="520" fill="#FAFAF9"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#0B0B0C" font-weight="600" letter-spacing="-0.4">Parallel agents, merged one at a time</text>
+  <text x="48" y="88" font-size="17" fill="#5C5E64">Each agent gets its own worktree and branch. Tests run between merges.</text>
+  <path d="M60 292 H1096" fill="none" stroke="#5C5E64" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1108" y="297" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">main</text>
+  <path d="M150 292 C 190 292, 190 172, 230 172 H630 C 660 172, 660 292, 690 292" fill="none" stroke="#F97316" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M190 292 C 230 292, 230 412, 270 412 H900 C 930 412, 930 292, 960 292" fill="none" stroke="#F97316" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="250" y="140" width="270" height="64" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="1.6"/>
+  <text x="268" y="166" font-size="16" fill="#0B0B0C" font-weight="600">agent 1</text>
+  <text x="339.79200000000003" y="166" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">branch task-a</text>
+  <text x="268" y="190" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">worktree ../shop-task-a</text>
+  <rect x="290" y="380" width="270" height="64" rx="12" fill="#FFFFFF" stroke="#F97316" stroke-width="1.6"/>
+  <text x="308" y="406" font-size="16" fill="#0B0B0C" font-weight="600">agent 2</text>
+  <text x="379.79200000000003" y="406" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">branch task-b</text>
+  <text x="308" y="430" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">worktree ../shop-task-b</text>
+  <circle cx="60" cy="292" r="7" fill="#FFFFFF" stroke="#5C5E64" stroke-width="2"/>
+  <circle cx="105" cy="292" r="7" fill="#FFFFFF" stroke="#5C5E64" stroke-width="2"/>
+  <circle cx="150" cy="292" r="7" fill="#FFFFFF" stroke="#5C5E64" stroke-width="2"/>
+  <circle cx="190" cy="292" r="7" fill="#FFFFFF" stroke="#5C5E64" stroke-width="2"/>
+  <circle cx="560" cy="172" r="6" fill="#F97316"/>
+  <circle cx="600" cy="172" r="6" fill="#F97316"/>
+  <circle cx="600" cy="412" r="6" fill="#F97316"/>
+  <circle cx="640" cy="412" r="6" fill="#F97316"/>
+  <circle cx="690" cy="292" r="9" fill="#0B0B0C"/>
+  <text x="702" y="268" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">1  merge task-a</text>
+  <circle cx="760" cy="292" r="13" fill="#E6F3EE" stroke="#0F7A5F" stroke-width="1.6"/>
+  <path d="M755 292 L758.3333333333334 295.5 L765 288.5" fill="none" stroke="#0F7A5F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="760" y="330" font-size="15" fill="#0F7A5F" font-weight="600" text-anchor="middle">tests</text>
+  <path d="M792 302 C 792 352, 810 372, 820 400" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="782" y="364" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="end">2  rebase task-b onto main</text>
+  <circle cx="846" cy="412" r="13" fill="#E6F3EE" stroke="#0F7A5F" stroke-width="1.6"/>
+  <path d="M841 412 L844.3333333333334 415.5 L851 408.5" fill="none" stroke="#0F7A5F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="846" y="450" font-size="15" fill="#0F7A5F" font-weight="600" text-anchor="middle">tests in the worktree</text>
+  <circle cx="960" cy="292" r="9" fill="#0B0B0C"/>
+  <text x="972" y="268" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">3  merge task-b</text>
+  <circle cx="1030" cy="292" r="13" fill="#E6F3EE" stroke="#0F7A5F" stroke-width="1.6"/>
+  <path d="M1025 292 L1028.3333333333333 295.5 L1035 288.5" fill="none" stroke="#0F7A5F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1030" y="330" font-size="15" fill="#0F7A5F" font-weight="600" text-anchor="middle">tests</text>
+  <text x="48" y="494" font-size="15" fill="#5C5E64">Pick tasks that share no files, migrations or lockfiles. When in doubt, run them in sequence.</text>
+  </g>
+</svg>

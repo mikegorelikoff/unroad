@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stage 10, Leading the change: Bring what works to your team: a story with evidence, a pilot, agreements, coaching, policy and metrics. 8 topics.">
+  <title>Stage 10, Leading the change: Bring what works to your team: a story with evidence, a pilot, agreements, coaching, policy and metrics. 8 topics.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="300" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="64" y="82" font-size="18" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">Stage 10</text>
+  <text x="64" y="138" font-size="46" fill="#FAFAF9" font-weight="600" letter-spacing="-1">Leading the change</text>
+  <text x="64" y="182" font-size="20" fill="#A1A1AA">Bring what works to your team: a story with evidence, a pilot,</text>
+  <text x="64" y="210" font-size="20" fill="#A1A1AA">agreements, coaching, policy and metrics.</text>
+  <circle cx="68" cy="255" r="4" fill="#F97316"/>
+  <text x="82" y="260" font-size="15" fill="#FAFAF9" font-weight="600">8 topics</text>
+  <text x="152.27499999999998" y="260" font-size="15" fill="#A1A1AA">practitioner to expert</text>
+  <rect x="760" y="36" width="392" height="228" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <path d="M956 150 L956 74" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M956 150 L1070 120" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M956 150 L1018 218" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M956 150 L894 218" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M956 150 L842 120" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="956" cy="74" r="24" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <circle cx="956" cy="62" r="9" fill="#141416" stroke="#A1A1AA" stroke-width="1.6"/>
+  <path d="M941 90 C941 74 971 74 971 90" fill="#141416" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1070" cy="120" r="24" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <circle cx="1070" cy="108" r="9" fill="#141416" stroke="#F97316" stroke-width="1.6"/>
+  <path d="M1055 136 C1055 120 1085 120 1085 136" fill="#141416" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1018" cy="218" r="24" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <circle cx="1018" cy="206" r="9" fill="#141416" stroke="#A1A1AA" stroke-width="1.6"/>
+  <path d="M1003 234 C1003 218 1033 218 1033 234" fill="#141416" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="894" cy="218" r="24" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <circle cx="894" cy="206" r="9" fill="#141416" stroke="#F97316" stroke-width="1.6"/>
+  <path d="M879 234 C879 218 909 218 909 234" fill="#141416" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="842" cy="120" r="24" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <circle cx="842" cy="108" r="9" fill="#141416" stroke="#A1A1AA" stroke-width="1.6"/>
+  <path d="M827 136 C827 120 857 120 857 136" fill="#141416" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="956" cy="150" r="30" fill="#2A1608" stroke="#F97316" stroke-width="2"/>
+  <circle cx="956" cy="138" r="9" fill="#2A1608" stroke="#F97316" stroke-width="1.6"/>
+  <path d="M941 166 C941 150 971 150 971 166" fill="#2A1608" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

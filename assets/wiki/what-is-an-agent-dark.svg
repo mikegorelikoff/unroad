@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="The agent loop: you give a task; the model reads the context and proposes a tool call (decision); the harness checks permissions, allow, ask or deny, and runs the tool (execution); the result is appended to the context (observation); the model decides again, until it gives a final answer. Permissions, sandboxes and hooks act in the harness, between the decision and the execution.">
+  <title>The agent loop: you give a task; the model reads the context and proposes a tool call (decision); the harness checks permissions, allow, ask or deny, and runs the tool (execution); the result is appended to the context (observation); the model decides again, until it gives a final answer. Permissions, sandboxes and hooks act in the harness, between the decision and the execution.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="520" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">The agent loop</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">The model only proposes. The harness decides what runs, and the result is all the model sees.</text>
+  <rect x="48" y="168" width="170" height="108" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="70" y="208" font-size="19" fill="#FAFAF9" font-weight="600">You</text>
+  <text x="70" y="234" font-size="15" fill="#A1A1AA">give a task</text>
+  <rect x="278" y="168" width="260" height="108" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="300" y="208" font-size="19" fill="#FAFAF9" font-weight="600">Model</text>
+  <text x="300" y="234" font-size="15" fill="#A1A1AA">reads the context and</text>
+  <text x="300" y="255" font-size="15" fill="#A1A1AA">proposes a tool call</text>
+  <text x="278" y="154" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">decision</text>
+  <rect x="598" y="168" width="300" height="108" rx="12" fill="#2A1608" stroke="#F97316" stroke-width="2"/>
+  <text x="620" y="208" font-size="19" fill="#FAFAF9" font-weight="600">Harness</text>
+  <text x="620" y="234" font-size="15" fill="#A1A1AA">checks permissions, then runs it</text>
+  <rect x="620" y="244" width="65" height="24" rx="8" fill="#0E241E"/>
+  <text x="630" y="261.25" font-size="15" fill="#4CC9A0" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">allow</text>
+  <rect x="693" y="244" width="47" height="24" rx="8" fill="#141416"/>
+  <text x="703" y="261.25" font-size="15" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">ask</text>
+  <rect x="748" y="244" width="56" height="24" rx="8" fill="#2B1417"/>
+  <text x="758" y="261.25" font-size="15" fill="#F27A7F" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">deny</text>
+  <text x="598" y="154" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">execution</text>
+  <text x="898" y="154" font-size="15" fill="#FB923C" font-weight="600" text-anchor="end">safety lives here</text>
+  <circle cx="765.1975" cy="149" r="4" fill="#F97316"/>
+  <rect x="958" y="168" width="194" height="108" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="980" y="208" font-size="19" fill="#FAFAF9" font-weight="600">Tool</text>
+  <text x="980" y="234" font-size="15" fill="#A1A1AA">shell, files,</text>
+  <text x="980" y="255" font-size="15" fill="#A1A1AA">search, web</text>
+  <rect x="398" y="352" width="754" height="92" rx="12" fill="#18181B" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="420" y="390" font-size="18" fill="#FAFAF9" font-weight="600">The result is appended to the context</text>
+  <text x="420" y="416" font-size="15" fill="#A1A1AA">The model knows only what came back: a timeout or a truncated log is all it gets.</text>
+  <text x="1130" y="390" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="end">observation</text>
+  <rect x="48" y="352" width="290" height="92" rx="12" fill="none" stroke="#3F3F46" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <text x="70" y="390" font-size="18" fill="#FAFAF9" font-weight="600">Final answer</text>
+  <text x="70" y="416" font-size="15" fill="#A1A1AA">a claim: check the tool results</text>
+  <path d="M222 222 H275" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M542 222 H595" fill="none" stroke="#FAFAF9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ink)"/>
+  <text x="568" y="212" font-size="15" fill="#A1A1AA" text-anchor="middle">call</text>
+  <path d="M902 222 H955" fill="none" stroke="#FAFAF9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ink)"/>
+  <text x="928" y="212" font-size="15" fill="#A1A1AA" text-anchor="middle">run</text>
+  <path d="M1055 280 V349" fill="none" stroke="#FAFAF9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ink)"/>
+  <text x="1067" y="323" font-size="15" fill="#A1A1AA">result</text>
+  <path d="M470 348 V279" fill="none" stroke="#FAFAF9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ink)"/>
+  <text x="482" y="323" font-size="15" fill="#A1A1AA">next decision</text>
+  <path d="M320 280 V349" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="310" y="323" font-size="15" fill="#A1A1AA" text-anchor="end">no more calls</text>
+  <text x="600" y="492" font-size="15" fill="#A1A1AA" text-anchor="middle">Repeat until the model answers, you interrupt, or a limit is hit.</text>
+  </g>
+</svg>

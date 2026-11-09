@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="How a hook works. An event fires, for example PreToolUse before a Bash call; the matching hook script receives the call as JSON on stdin and answers with an exit code. Exit 0 lets the call continue, and the normal permission checks still apply. Exit 2 blocks it, and the message on stderr goes back to the agent, which reads the reason and adjusts.">
+  <title>How a hook works. An event fires, for example PreToolUse before a Bash call; the matching hook script receives the call as JSON on stdin and answers with an exit code. Exit 0 lets the call continue, and the normal permission checks still apply. Exit 2 blocks it, and the message on stderr goes back to the agent, which reads the reason and adjusts.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="470" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">Hooks: code that runs on agent events</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">Deterministic checks the agent cannot talk its way past.</text>
+  <rect x="48" y="150" width="200" height="112" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="70" y="188" font-size="19" fill="#FAFAF9" font-weight="600">Agent</text>
+  <text x="70" y="214" font-size="15" fill="#A1A1AA">proposes</text>
+  <text x="70" y="238" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">rm -rf build</text>
+  <rect x="300" y="150" width="230" height="112" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="322" y="188" font-size="19" fill="#FAFAF9" font-weight="600">Event</text>
+  <text x="322" y="214" font-size="15" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">PreToolUse</text>
+  <text x="322" y="238" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">matcher: Bash</text>
+  <rect x="582" y="150" width="286" height="112" rx="12" fill="#2A1608" stroke="#F97316" stroke-width="2"/>
+  <text x="604" y="188" font-size="19" fill="#FAFAF9" font-weight="600">Hook script</text>
+  <text x="604" y="214" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">.claude/hooks/guard.sh</text>
+  <text x="604" y="238" font-size="15" fill="#A1A1AA">reads the call as JSON on stdin</text>
+  <path d="M252 206.0 H297" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M534 206.0 H579" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="920" y="124" width="232" height="76" rx="12" fill="#0E241E"/>
+  <text x="940" y="156" font-size="16" fill="#4CC9A0" font-weight="600">exit 0: continues</text>
+  <text x="940" y="180" font-size="15" fill="#FAFAF9">permission rules still apply</text>
+  <rect x="920" y="212" width="232" height="76" rx="12" fill="#2B1417"/>
+  <text x="940" y="244" font-size="16" fill="#F27A7F" font-weight="600">exit 2: blocked</text>
+  <text x="940" y="268" font-size="15" fill="#FAFAF9">reason on stderr</text>
+  <path d="M872 198.0 C 896 198.0, 896 162, 917 162" fill="none" stroke="#4CC9A0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-pass_)"/>
+  <path d="M872 214.0 C 896 214.0, 896 250, 917 250" fill="none" stroke="#F27A7F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-fail)"/>
+  <path d="M1036 292 V340 H148 V265" fill="none" stroke="#F27A7F" stroke-width="1.8" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-fail)"/>
+  <rect x="452.0" y="322" width="316.0" height="36" rx="8" fill="#0B0B0C"/>
+  <text x="610" y="346" font-size="15" text-anchor="middle"><tspan fill="#F27A7F" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">“Use npm run clean, not rm -rf.”</tspan></text>
+  <text x="162" y="324" font-size="15" fill="#A1A1AA">the agent reads the reason and adjusts</text>
+  <text x="48" y="414" font-size="15" fill="#A1A1AA">A hook’s deny holds in every permission mode. Other events: SessionStart, UserPromptSubmit,</text>
+  <text x="48" y="438" font-size="15" fill="#A1A1AA">PostToolUse for formatting after edits, Stop for checks before the agent finishes.</text>
+  </g>
+</svg>

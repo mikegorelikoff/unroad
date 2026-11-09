@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stage 09, Harness and delivery: Everything around the agent: guides, sensors, CI, commits, releases and parallel work. 4 topics.">
+  <title>Stage 09, Harness and delivery: Everything around the agent: guides, sensors, CI, commits, releases and parallel work. 4 topics.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="300" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="64" y="82" font-size="18" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">Stage 09</text>
+  <text x="64" y="138" font-size="46" fill="#FAFAF9" font-weight="600" letter-spacing="-1">Harness and delivery</text>
+  <text x="64" y="182" font-size="20" fill="#A1A1AA">Everything around the agent: guides, sensors, CI, commits,</text>
+  <text x="64" y="210" font-size="20" fill="#A1A1AA">releases and parallel work.</text>
+  <circle cx="68" cy="255" r="4" fill="#F97316"/>
+  <text x="82" y="260" font-size="15" fill="#FAFAF9" font-weight="600">4 topics</text>
+  <text x="152.27499999999998" y="260" font-size="15" fill="#A1A1AA">practitioner to expert</text>
+  <rect x="760" y="36" width="392" height="228" rx="14" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <path d="M800 150 H1112" fill="none" stroke="#A1A1AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M850 150 C 880 150, 880 90, 910 90 H990 C 1020 90, 1020 150, 1050 150" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M880 150 C 905 150, 905 210, 930 210 H1010 C 1040 210, 1040 150, 1080 150" fill="none" stroke="#3F3F46" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="800" cy="150" r="6" fill="#141416" stroke="#A1A1AA" stroke-width="2"/>
+  <circle cx="850" cy="150" r="6" fill="#141416" stroke="#A1A1AA" stroke-width="2"/>
+  <circle cx="880" cy="150" r="6" fill="#141416" stroke="#A1A1AA" stroke-width="2"/>
+  <circle cx="1050" cy="150" r="6" fill="#141416" stroke="#A1A1AA" stroke-width="2"/>
+  <circle cx="1080" cy="150" r="6" fill="#141416" stroke="#A1A1AA" stroke-width="2"/>
+  <circle cx="1112" cy="150" r="6" fill="#141416" stroke="#A1A1AA" stroke-width="2"/>
+  <circle cx="930" cy="90" r="6" fill="#F97316"/>
+  <circle cx="970" cy="90" r="6" fill="#F97316"/>
+  <circle cx="950" cy="210" r="6" fill="#141416" stroke="#3F3F46" stroke-width="2"/>
+  <circle cx="990" cy="210" r="6" fill="#141416" stroke="#3F3F46" stroke-width="2"/>
+  <circle cx="1050" cy="150" r="6" fill="#F97316"/>
+  <text x="1112" y="182" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" text-anchor="middle">main</text>
+  </g>
+</svg>

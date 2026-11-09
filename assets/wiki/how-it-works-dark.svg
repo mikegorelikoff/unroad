@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="How unroad works: you talk to your agent with /ur-learn; the agent runs the engine, ur; the engine serves one step; you and the agent do the work; ur done checks the step's gates in code. A pass serves the next step, a fail keeps the same step and gives the reason. Progress is saved in ~/.unroad, in state.json and a hash-chained log.jsonl, and the roadmap app reads the same state.">
+  <title>How unroad works: you talk to your agent with /ur-learn; the agent runs the engine, ur; the engine serves one step; you and the agent do the work; ur done checks the step's gates in code. A pass serves the next step, a fail keeps the same step and gives the reason. Progress is saved in ~/.unroad, in state.json and a hash-chained log.jsonl, and the roadmap app reads the same state.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="640" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">How it works</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">The agent teaches. The engine decides when a step is done.</text>
+  <rect x="48" y="128" width="180" height="92" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="72" y="166" font-size="19" fill="#FAFAF9" font-weight="600">You</text>
+  <text x="72" y="194" font-size="15"><tspan fill="#A1A1AA">type </tspan><tspan fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">/ur-learn</tspan></text>
+  <rect x="288" y="128" width="200" height="92" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="312" y="166" font-size="19" fill="#FAFAF9" font-weight="600">Your agent</text>
+  <text x="312" y="194" font-size="15"><tspan fill="#A1A1AA">runs </tspan><tspan fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">ur</tspan><tspan fill="#A1A1AA"> for you</tspan></text>
+  <rect x="548" y="128" width="200" height="92" rx="12" fill="#FAFAF9"/>
+  <text x="648" y="174" font-size="26" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">ur</text>
+  <text x="648" y="200" font-size="15" fill="#5C5E64" text-anchor="middle">the engine</text>
+  <rect x="808" y="128" width="344" height="92" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="832" y="166" font-size="19" fill="#FAFAF9" font-weight="600">Serves one step</text>
+  <text x="832" y="194" font-size="15" fill="#A1A1AA">its goal, the material and its gates</text>
+  <path d="M232 174.0 H285" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M492 174.0 H545" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M752 174.0 H805" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="48" y="290" width="440" height="116" rx="12" fill="none" stroke="#3F3F46" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <text x="70" y="322" font-size="16" fill="#FAFAF9" font-weight="600">A gate is code, not a claim</text>
+  <rect x="70" y="336" width="118" height="28" rx="8" fill="#0E241E"/>
+  <text x="82" y="355.25" font-size="15" fill="#4CC9A0">the file exists</text>
+  <rect x="198" y="336" width="176" height="28" rx="8" fill="#0E241E"/>
+  <text x="210" y="355.25" font-size="15" fill="#4CC9A0">placeholders are filled</text>
+  <rect x="70" y="370" width="187" height="28" rx="8" fill="#0E241E"/>
+  <text x="82" y="389.25" font-size="15" fill="#4CC9A0">the command succeeds</text>
+  <rect x="267" y="370" width="154" height="28" rx="8" fill="#0E241E"/>
+  <text x="279" y="389.25" font-size="15" fill="#4CC9A0">the size limit holds</text>
+  <path d="M488 348.0 H548" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="548" y="290" width="200" height="116" rx="12" fill="#2A1608" stroke="#F97316" stroke-width="2"/>
+  <text x="648" y="340" font-size="21" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">ur done</text>
+  <text x="648" y="370" font-size="15" fill="#A1A1AA" text-anchor="middle">checks the gates</text>
+  <text x="648" y="391" font-size="15" fill="#A1A1AA" text-anchor="middle">in code</text>
+  <rect x="808" y="290" width="344" height="116" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="832" y="330" font-size="19" fill="#FAFAF9" font-weight="600">You and the agent do the work</text>
+  <text x="832" y="358" font-size="15" fill="#A1A1AA">explain, answer, edit the lab files</text>
+  <text x="832" y="382" font-size="15" fill="#A1A1AA">in your own repository</text>
+  <path d="M980 224 V287" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M808 348.0 H751" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <path d="M648 286 V223" fill="none" stroke="#4CC9A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-pass_)"/>
+  <text x="664" y="261" font-size="15" fill="#4CC9A0" font-weight="600">pass: next step</text>
+  <path d="M720 410 V436 H980 V409" fill="none" stroke="#F27A7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-fail)"/>
+  <text x="850" y="460" font-size="15" fill="#F27A7F" font-weight="600" text-anchor="middle">fail: same step, with the reason</text>
+  <path d="M648 410 V493" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="660" y="460" font-size="15" fill="#A1A1AA">saved</text>
+  <rect x="48" y="496" width="700" height="120" rx="12" fill="#18181B" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="72" y="532" font-size="18"><tspan fill="#FAFAF9" font-weight="600">Progress is saved in </tspan><tspan fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">~/.unroad</tspan></text>
+  <rect x="72" y="548" width="114" height="28" rx="8" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="84" y="567.25" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">state.json</text>
+  <text x="212" y="567" font-size="15" fill="#A1A1AA">where you are: topics, answers, lab results</text>
+  <rect x="72" y="580" width="105" height="28" rx="8" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="84" y="599.25" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">log.jsonl</text>
+  <text x="212" y="599" font-size="15" fill="#A1A1AA">one line per change, chained by SHA-256</text>
+  <rect x="808" y="496" width="344" height="120" rx="12" fill="none" stroke="#3F3F46" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <circle cx="830" cy="527" r="4" fill="#F97316"/>
+  <text x="844" y="532" font-size="18" fill="#FAFAF9" font-weight="600">The roadmap app</text>
+  <text x="830" y="560" font-size="15"><tspan fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">/ur-gui</tspan><tspan fill="#A1A1AA"> opens it in your browser.</tspan></text>
+  <text x="830" y="582" font-size="15" fill="#A1A1AA">It reads the same state, so the agent</text>
+  <text x="830" y="602" font-size="15" fill="#A1A1AA">and the browser always agree.</text>
+  <path d="M808 556.0 H751" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  </g>
+</svg>

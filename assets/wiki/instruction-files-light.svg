@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="One instruction file, many tools. AGENTS.md at the repository root is the source of truth: Codex reads it from the root down to the current directory, Cursor reads it in the root and subdirectories, and Copilot reads it with the nearest file taking precedence. Claude Code reads CLAUDE.md, which imports the shared file with @AGENTS.md and adds Claude-only lines.">
+  <title>One instruction file, many tools. AGENTS.md at the repository root is the source of truth: Codex reads it from the root down to the current directory, Cursor reads it in the root and subdirectories, and Copilot reads it with the nearest file taking precedence. Claude Code reads CLAUDE.md, which imports the shared file with @AGENTS.md and adds Claude-only lines.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5C5E64"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0F7A5F"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#B3263A"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#C4C4BE"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B0B0C"/></marker></defs>
+  <rect width="1200" height="560" fill="#FAFAF9"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#0B0B0C" font-weight="600" letter-spacing="-0.4">One file, many tools</text>
+  <text x="48" y="88" font-size="17" fill="#5C5E64">Keep the shared rules in AGENTS.md and point every tool at it.</text>
+  <rect x="48" y="124" width="500" height="372" rx="12" fill="#F3F3F0" stroke="#C4C4BE" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <text x="72" y="156" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">your repository /</text>
+  <rect x="72" y="176" width="452" height="168" rx="12" fill="#FFF1E6" stroke="#F97316" stroke-width="2"/>
+  <text x="94" y="212" font-size="19" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">AGENTS.md</text>
+  <text x="502" y="212" font-size="15" fill="#C2410C" font-weight="600" text-anchor="end">source of truth</text>
+  <text x="94" y="248" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">## Commands</text>
+  <text x="94" y="274" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">## Boundaries</text>
+  <text x="94" y="300" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">## Done means</text>
+  <text x="94" y="326" font-size="15" fill="#5C5E64">short, every line changes behaviour</text>
+  <rect x="72" y="384" width="452" height="92" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="94" y="418" font-size="19" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">CLAUDE.md</text>
+  <text x="94" y="446" font-size="15" fill="#C2410C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">@AGENTS.md</text>
+  <text x="222" y="446" font-size="15" fill="#5C5E64" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">## Claude Code only</text>
+  <path d="M142 380 V347" fill="none" stroke="#F97316" stroke-width="1.6" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-accent)"/>
+  <text x="156" y="370" font-size="15" fill="#C2410C">imports</text>
+  <rect x="700" y="124" width="452" height="76" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="722" y="156" font-size="18" fill="#0B0B0C" font-weight="600">Codex</text>
+  <text x="722" y="180" font-size="15" fill="#5C5E64">reads AGENTS.md from the root down to where it runs</text>
+  <path d="M528 236 C 612 236, 612 162.0, 697 162.0" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="700" y="216" width="452" height="76" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="722" y="248" font-size="18" fill="#0B0B0C" font-weight="600">Cursor</text>
+  <text x="722" y="272" font-size="15" fill="#5C5E64">reads AGENTS.md in the root and in subdirectories</text>
+  <path d="M528 260 C 612 260, 612 254.0, 697 254.0" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="700" y="308" width="452" height="76" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="722" y="340" font-size="18" fill="#0B0B0C" font-weight="600">Copilot</text>
+  <text x="722" y="364" font-size="15" fill="#5C5E64">reads AGENTS.md anywhere; the nearest one wins</text>
+  <path d="M528 284 C 612 284, 612 346.0, 697 346.0" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="700" y="400" width="452" height="76" rx="12" fill="#FFFFFF" stroke="#C4C4BE" stroke-width="1.2"/>
+  <text x="722" y="432" font-size="18" fill="#0B0B0C" font-weight="600">Claude Code</text>
+  <text x="722" y="456" font-size="15" fill="#5C5E64">reads CLAUDE.md, which imports it</text>
+  <path d="M528 430.0 C 612 430.0, 612 438.0, 697 438.0" fill="none" stroke="#5C5E64" stroke-width="1.6" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <text x="48" y="532" font-size="15"><tspan fill="#5C5E64">Then check what each tool actually loaded, for example </tspan><tspan fill="#C2410C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">/context all</tspan><tspan fill="#5C5E64"> in Claude Code.</tspan></text>
+  </g>
+</svg>

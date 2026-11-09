@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Stage 03, Agent setup: A configured, safe and repeatable environment beats a default one with everything switched on. 6 topics.">
+  <title>Stage 03, Agent setup: A configured, safe and repeatable environment beats a default one with everything switched on. 6 topics.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5C5E64"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0F7A5F"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#B3263A"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#C4C4BE"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B0B0C"/></marker></defs>
+  <rect width="1200" height="300" fill="#FAFAF9"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="64" y="82" font-size="18" fill="#C2410C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">Stage 03</text>
+  <text x="64" y="138" font-size="46" fill="#0B0B0C" font-weight="600" letter-spacing="-1">Agent setup</text>
+  <text x="64" y="182" font-size="20" fill="#5C5E64">A configured, safe and repeatable environment beats a default one</text>
+  <text x="64" y="210" font-size="20" fill="#5C5E64">with everything switched on.</text>
+  <circle cx="68" cy="255" r="4" fill="#F97316"/>
+  <text x="82" y="260" font-size="15" fill="#0B0B0C" font-weight="600">6 topics</text>
+  <text x="152.27499999999998" y="260" font-size="15" fill="#5C5E64">foundation to expert</text>
+  <rect x="760" y="36" width="392" height="228" rx="14" fill="#FFFFFF" stroke="#E4E4E0" stroke-width="1.2"/>
+  <rect x="820" y="72" width="272" height="40" rx="10" fill="#FFFFFF" stroke="#E4E4E0" stroke-width="1.2"/>
+  <text x="840" y="97" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">allow</text>
+  <rect x="1024" y="80" width="48" height="24" rx="12" fill="#0F7A5F"/>
+  <circle cx="1060" cy="92" r="8" fill="#FAFAF9"/>
+  <rect x="820" y="130" width="272" height="40" rx="10" fill="#FFFFFF" stroke="#E4E4E0" stroke-width="1.2"/>
+  <text x="840" y="155" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">ask</text>
+  <rect x="1024" y="138" width="48" height="24" rx="12" fill="#F97316"/>
+  <circle cx="1060" cy="150" r="8" fill="#FAFAF9"/>
+  <rect x="820" y="188" width="272" height="40" rx="10" fill="#FFFFFF" stroke="#E4E4E0" stroke-width="1.2"/>
+  <text x="840" y="213" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">deny</text>
+  <rect x="1024" y="196" width="48" height="24" rx="12" fill="#B3263A"/>
+  <circle cx="1036" cy="208" r="8" fill="#FAFAF9"/>
+  </g>
+</svg>

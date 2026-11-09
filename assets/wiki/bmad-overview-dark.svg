@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-label="The four BMAD phases. Analysis, optional: brainstorming, forge idea, product brief and PRFAQ skills, writing brief.md, research.md and a PRFAQ. Planning: bmad-prd, bmad-ux and bmad-spec, writing prd.md, DESIGN.md, EXPERIENCE.md and SPEC.md. Solutioning: bmad-architecture, bmad-create-epics-and-stories and bmad-sprint-planning, writing ARCHITECTURE-SPINE.md, epics.md and sprint-status.yaml. Implementation: bmad-build, bmad-code-review, bmad-qa-generate-e2e-tests and bmad-retrospective, producing a spec per story, code and commits, and a retrospective. A small change goes straight to bmad-build, an epic-sized change runs bmad-spec and then one build per story, a multi-epic product uses the full path.">
+  <title>The four BMAD phases. Analysis, optional: brainstorming, forge idea, product brief and PRFAQ skills, writing brief.md, research.md and a PRFAQ. Planning: bmad-prd, bmad-ux and bmad-spec, writing prd.md, DESIGN.md, EXPERIENCE.md and SPEC.md. Solutioning: bmad-architecture, bmad-create-epics-and-stories and bmad-sprint-planning, writing ARCHITECTURE-SPINE.md, epics.md and sprint-status.yaml. Implementation: bmad-build, bmad-code-review, bmad-qa-generate-e2e-tests and bmad-retrospective, producing a spec per story, code and commits, and a retrospective. A small change goes straight to bmad-build, an epic-sized change runs bmad-spec and then one build per story, a multi-epic product uses the full path.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="660" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">BMAD: four phases, one unit of work</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">Every path ends in a bmad-build session that plans, implements, reviews and commits one goal.</text>
+  <rect x="48" y="116" width="236" height="344" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <circle cx="78" cy="148" r="13" fill="#18181B"/>
+  <text x="78" y="153" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">1</text>
+  <text x="100" y="154" font-size="19" fill="#FAFAF9" font-weight="600">Analysis</text>
+  <text x="268" y="154" font-size="15" fill="#A1A1AA" text-anchor="end">optional</text>
+  <text x="64" y="192" font-size="15" fill="#A1A1AA">skills</text>
+  <text x="64" y="218" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-brainstorming</text>
+  <text x="64" y="242" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-forge-idea</text>
+  <text x="64" y="266" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-product-brief</text>
+  <text x="64" y="290" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-prfaq</text>
+  <path d="M64 326 H268" fill="none" stroke="#27272A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="64" y="354" font-size="15" fill="#A1A1AA">writes</text>
+  <text x="64" y="380" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">brief.md</text>
+  <text x="64" y="404" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">research.md</text>
+  <text x="64" y="428" font-size="15" fill="#FAFAF9">PRFAQ document</text>
+  <path d="M286 148 H297" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="300" y="116" width="236" height="344" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <circle cx="330" cy="148" r="13" fill="#18181B"/>
+  <text x="330" y="153" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">2</text>
+  <text x="352" y="154" font-size="19" fill="#FAFAF9" font-weight="600">Planning</text>
+  <text x="316" y="192" font-size="15" fill="#A1A1AA">skills</text>
+  <text x="316" y="218" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-prd</text>
+  <text x="316" y="242" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-ux</text>
+  <text x="316" y="266" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-spec</text>
+  <path d="M316 326 H520" fill="none" stroke="#27272A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="316" y="354" font-size="15" fill="#A1A1AA">writes</text>
+  <text x="316" y="380" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">prd.md</text>
+  <text x="316" y="404" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">DESIGN.md</text>
+  <text x="316" y="428" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">EXPERIENCE.md</text>
+  <text x="316" y="452" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">SPEC.md</text>
+  <path d="M538 148 H549" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="552" y="116" width="300" height="344" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <circle cx="582" cy="148" r="13" fill="#18181B"/>
+  <text x="582" y="153" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">3</text>
+  <text x="604" y="154" font-size="19" fill="#FAFAF9" font-weight="600">Solutioning</text>
+  <text x="568" y="192" font-size="15" fill="#A1A1AA">skills</text>
+  <text x="568" y="218" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-architecture</text>
+  <text x="568" y="242" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-create-epics-and-stories</text>
+  <text x="568" y="266" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-sprint-planning</text>
+  <path d="M568 326 H836" fill="none" stroke="#27272A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="568" y="354" font-size="15" fill="#A1A1AA">writes</text>
+  <text x="568" y="380" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">ARCHITECTURE-SPINE.md</text>
+  <text x="568" y="404" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">epics.md</text>
+  <text x="568" y="428" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">sprint-status.yaml</text>
+  <path d="M854 148 H865" fill="none" stroke="#A1A1AA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-muted)"/>
+  <rect x="868" y="116" width="284" height="344" rx="12" fill="#141416" stroke="#F97316" stroke-width="2"/>
+  <circle cx="898" cy="148" r="13" fill="#F97316"/>
+  <text x="898" y="153" font-size="15" fill="#0B0B0C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" text-anchor="middle">4</text>
+  <text x="920" y="154" font-size="19" fill="#FAFAF9" font-weight="600">Implementation</text>
+  <text x="884" y="192" font-size="15" fill="#A1A1AA">skills</text>
+  <text x="884" y="218" font-size="15" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">bmad-build</text>
+  <text x="884" y="242" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-code-review</text>
+  <text x="884" y="266" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-qa-generate-e2e-tests</text>
+  <text x="884" y="290" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-retrospective</text>
+  <path d="M884 326 H1136" fill="none" stroke="#27272A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="884" y="354" font-size="15" fill="#A1A1AA">writes</text>
+  <text x="884" y="380" font-size="15" fill="#FAFAF9">a spec per story</text>
+  <text x="884" y="404" font-size="15" fill="#FAFAF9">code and commits</text>
+  <text x="884" y="428" font-size="15" fill="#FAFAF9">a retrospective</text>
+  <text x="48" y="500" font-size="16" fill="#FAFAF9" font-weight="600">Not every change walks all four</text>
+  <path d="M171.13 533 H876" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="3 5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="876" y="518" width="268" height="30" rx="8" fill="#2A1608" stroke="#F97316" stroke-width="1.2"/>
+  <text x="890" y="538" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-build</text>
+  <text x="48" y="538" font-size="15" fill="#FAFAF9" font-weight="600">small change</text>
+  <path d="M206.8825 573 H876" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="3 5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="308" y="558" width="220" height="30" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <text x="322" y="578" font-size="15" fill="#A1A1AA" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">bmad-spec</text>
+  <rect x="876" y="558" width="268" height="30" rx="8" fill="#2A1608" stroke="#F97316" stroke-width="1.2"/>
+  <text x="890" y="578" font-size="15" fill="#FAFAF9">one bmad-build per story</text>
+  <text x="48" y="578" font-size="15" fill="#FAFAF9" font-weight="600">epic-sized change</text>
+  <path d="M276 613 H876" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="3 5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="56" y="598" width="220" height="30" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="308" y="598" width="220" height="30" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="560" y="598" width="284" height="30" rx="8" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="876" y="598" width="268" height="30" rx="8" fill="#2A1608" stroke="#F97316" stroke-width="1.2"/>
+  <text x="890" y="618" font-size="15" fill="#FAFAF9">the full path</text>
+  <text x="64" y="618" font-size="15" fill="#FAFAF9" font-weight="600">multi-epic product</text>
+  </g>
+</svg>

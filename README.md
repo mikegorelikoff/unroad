@@ -41,6 +41,10 @@ That is all. The installer:
 
 No root, no Python, no package managers. The web app needs [Node.js](https://nodejs.org) 20 or newer; everything else works without it.
 
+## Follow the story
+
+See the whole course through one developer's eyes: [the story of Maya](https://github.com/mikegorelikoff/unroad/wiki/00-Story-Meet-Maya), a developer on a TypeScript online store, from install to rolling the practices out to her team. Every prompt she sends, what the agent answers, the files that appear and the checks that pass.
+
 ## Your first ten minutes
 
 1. Open your agent (Claude Code, Codex or any agent that supports Agent Skills) in a repository you work on.
@@ -51,6 +55,13 @@ No root, no Python, no package managers. The web app needs [Node.js](https://nod
 Come back any time with `/ur-learn`. Your progress is saved, so a new session picks up exactly where you stopped.
 
 ## What you will learn
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wiki/curriculum-map-dark.svg">
+    <img src="assets/wiki/curriculum-map-light.svg" alt="The ten stages of the curriculum" width="860">
+  </picture>
+</p>
 
 | | Stage | Topics |
 |---|---|---|
@@ -68,6 +79,13 @@ Come back any time with `/ur-learn`. Your progress is saved, so a new session pi
 Every topic links to the best material on the subject: official documentation, standards and practical guides. Read any lesson in full in the [wiki](https://github.com/mikegorelikoff/unroad/wiki/Curriculum).
 
 ## How a topic works
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wiki/topic-anatomy-dark.svg">
+    <img src="assets/wiki/topic-anatomy-light.svg" alt="The five steps of a topic and what is checked in each" width="860">
+  </picture>
+</p>
 
 ```
 1 lesson      the mentor explains it with your project as the example, then checks you understood
@@ -105,6 +123,13 @@ You can learn entirely in the browser, entirely in your agent, or mix both: they
 | `/ur-doctor` | check that everything is installed and working |
 
 ## What runs under the hood
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wiki/how-it-works-dark.svg">
+    <img src="assets/wiki/how-it-works-light.svg" alt="How it works: you talk to your agent, the engine serves one step and checks it in code" width="860">
+  </picture>
+</p>
 
 You never need to type anything but the skills above. Under the hood your agent drives a small engine called `ur`: it serves the mentor one step at a time, checks quiz answers and labs in code, saves your progress and runs the roadmap app. Because the checks are code, the agent cannot skip a step or mark work done that is not done, and a new session always resumes where you stopped.
 

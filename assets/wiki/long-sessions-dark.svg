@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Long sessions and memory. During a session the context fills with file contents and test output; compaction replaces it with a summary that keeps the gist and loses detail. At the end of a session the agent updates progress.md and decisions.md on disk and you commit; a fresh session reads those files and git log, summarises where things stand and runs the tests before it continues.">
+  <title>Long sessions and memory. During a session the context fills with file contents and test output; compaction replaces it with a summary that keeps the gist and loses detail. At the end of a session the agent updates progress.md and decisions.md on disk and you commit; a fresh session reads those files and git log, summarises where things stand and runs the tests before it continues.</title>
+  <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
+  <rect width="1200" height="560" fill="#0B0B0C"/>
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
+  <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">State lives in files, not in the chat</text>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">A fresh session that reads good notes beats a long one that remembers badly.</text>
+  <rect x="48" y="124" width="640" height="220" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="70" y="158" font-size="18" fill="#FAFAF9" font-weight="600">Day 1 session</text>
+  <text x="70" y="182" font-size="15" fill="#A1A1AA">file contents and test output pile up</text>
+  <path d="M70 202 H448" fill="none" stroke="#F97316" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="456" y="207" font-size="15" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace">window limit</text>
+  <rect x="78" y="284" width="30" height="20" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="122" y="266" width="30" height="38" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="166" y="248" width="30" height="56" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="210" y="232" width="30" height="72" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="254" y="218" width="30" height="86" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="298" y="208" width="30" height="96" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="356" y="270" width="30" height="34" rx="5" fill="#2A1608" stroke="#F97316" stroke-width="1.5"/>
+  <rect x="400" y="252" width="30" height="52" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <path d="M70 304 H446" fill="none" stroke="#3F3F46" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="70" y="329" font-size="15" fill="#A1A1AA">context in use, turn by turn</text>
+  <text x="460" y="254" font-size="15" fill="#FB923C" font-weight="600">compact: a summary</text>
+  <text x="460" y="276" font-size="15" fill="#A1A1AA">keeps the gist, loses detail</text>
+  <rect x="748" y="124" width="404" height="220" rx="12" fill="#141416" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="770" y="158" font-size="18" fill="#FAFAF9" font-weight="600">Day 2: a fresh session</text>
+  <text x="770" y="182" font-size="15" fill="#A1A1AA">starts small, reads only what it needs</text>
+  <path d="M770 202 H1130" fill="none" stroke="#F97316" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="778" y="286" width="30" height="18" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <rect x="822" y="274" width="30" height="30" rx="5" fill="#A1A1AA" opacity="0.4"/>
+  <path d="M770 304 H1130" fill="none" stroke="#3F3F46" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="882" y="276" font-size="15" fill="#A1A1AA">summarise, run the tests,</text>
+  <text x="882" y="298" font-size="15" fill="#A1A1AA">then the first item under Next</text>
+  <rect x="48" y="400" width="1104" height="128" rx="12" fill="#18181B" stroke="#3F3F46" stroke-width="1.2"/>
+  <text x="72" y="432" font-size="16" fill="#FAFAF9" font-weight="600">On disk, committed with the code</text>
+  <rect x="72" y="448" width="336" height="62" rx="10" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="88" y="474" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">docs/work/progress.md</text>
+  <text x="88" y="496" font-size="15" fill="#A1A1AA">goal, done with proof, next</text>
+  <rect x="432" y="448" width="336" height="62" rx="10" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="448" y="474" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">docs/work/decisions.md</text>
+  <text x="448" y="496" font-size="15" fill="#A1A1AA">decision, why, rejected option</text>
+  <rect x="792" y="448" width="336" height="62" rx="10" fill="#141416" stroke="#27272A" stroke-width="1.2"/>
+  <text x="808" y="474" font-size="15" fill="#FAFAF9" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">git log --oneline</text>
+  <text x="808" y="496" font-size="15" fill="#A1A1AA">small commits, accurate history</text>
+  <path d="M560 348 V397" fill="none" stroke="#FAFAF9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ink)"/>
+  <text x="572" y="380" font-size="15" fill="#A1A1AA">end: update the files, review, commit</text>
+  <path d="M950 396 V347" fill="none" stroke="#FAFAF9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-ink)"/>
+  <text x="962" y="380" font-size="15" fill="#A1A1AA">start: read them</text>
+  </g>
+</svg>
