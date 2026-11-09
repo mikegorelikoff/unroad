@@ -30,15 +30,15 @@ Supported platforms: macOS (Apple Silicon and Intel), Linux (x86_64 and arm64, a
 unroad is built the way [unhooked](https://www.unmerged.tech/) runs agent skills:
 
 - **One step at a time.** A skill is a short list of steps. Your agent only ever sees the current step, so it cannot skip the quiz or rush the lab.
-- **Done is decided in code.** Each step lists gates. When the agent runs `ur done`, `ur` checks the gates itself: a quiz answer was correct, a lab file has no placeholders left, a command exits 0. If a gate fails, the step stays open and you see why.
+- **Done is decided in code.** Each step lists gates. When the step is finished, the engine (`ur`, which your agent runs) checks the gates itself: a quiz answer was correct, a lab file has no placeholders left, a command exits 0. If a gate fails, the step stays open and you see why.
 - **Progress lives in files.** Your state is in `~/.unroad/state.json` and an append-only log. Close the session, come back tomorrow, switch agents: `/ur-learn` resumes where you stopped.
-- **Questions pause the run.** When something needs your decision, the run halts with `ur ask` and waits for you; you answer and it continues.
+- **Questions pause the run.** When something needs your decision, the run pauses and waits for you; you answer and it continues.
 
-The skills and the curriculum are built into the `ur` binary and installed from it. `ur verify --integrity` tells you if an installed skill file was changed, and the event log is hash-chained, so edits to your history are detectable with `ur verify`.
+The skills and the curriculum are built into the engine binary and installed from it, so nobody can quietly change the lessons or the checks: `/ur-doctor` reports any edited skill file, and the progress log is hash-chained, so edits to your history are detectable.
 
 ## A topic, step by step
 
-| Step | You | The mentor | Checked by `ur` |
+| Step | You | The mentor | Checked in code |
 |---|---|---|---|
 | Lesson | answer one check question | explains each point with an example from your project | the lesson was shown |
 | Quiz | pick A, B or C | asks one question at a time, never hints the answer | every answer is correct |
@@ -50,52 +50,35 @@ Lab files go to `.unroad/labs/<topic>/` in your repository unless the lab works 
 
 ## Using the roadmap app
 
-`ur gui` starts the app in the background on `http://127.0.0.1:4317` (the next free port if that one is taken) and opens your browser. `ur gui --status` shows whether it runs, `ur gui --stop` stops it.
+Type `/ur-gui` in your agent. It starts the app in the background on `http://127.0.0.1:4317` (the next free port if that one is taken) and opens your browser. Ask your agent to stop it when you are done.
 
 Pages: the roadmap, each stage, each topic (the full interactive lesson), your progress with recent activity and a copyable report, onboarding, and how it works. Changes you make in your agent appear in the browser within a few seconds and the other way round.
 
 ## Customising
 
-Every skill has settings with defaults in its `customize.toon`. Override them without editing the skill:
+Ask your agent in plain words: "teach me context engineering next", "let me type in labs only when I ask", "show only foundation topics". The skills turn that into settings for the current run.
+
+For lasting changes, each skill reads settings from files, so a team can share them without editing the skills:
 
 - for a team, in the project: `.agents/custom/<skill>.toon` (commit it);
-- for yourself: `.agents/custom/<skill>.user.toon`;
-- for one run: `ur start <skill> --set workflow.<key>=<value>`.
+- for yourself: `.agents/custom/<skill>.user.toon`.
 
-Examples:
+Each skill's `customize.toon` lists every setting with a comment saying what it does, for example `coach_mode` (coach or pair) and `min_reflection_chars` in `ur-learn`.
 
-```bash
-ur start ur-learn --set workflow.topic=context-engineering    # learn a specific topic
-ur start ur-learn --set workflow.coach_mode=pair              # let the mentor type in labs when you ask
-ur explain ur-learn min_reflection_chars                      # show a setting and where it comes from
-```
+## For agents and contributors
 
-## Commands
-
-| Command | Does |
-|---|---|
-| `ur` | progress, the open run and the next command |
-| `ur start <skill>`, `ur resume`, `ur done` | run a skill step by step |
-| `ur ask "<question>"`, `ur reply C\|E\|X` | pause a run with a question; continue, edit or cancel |
-| `ur list`, `ur known <topic>`, `ur skip <topic>`, `ur reset <topic>` | topics and placement |
-| `ur answer <n> <letter>`, `ur lab --scaffold`, `ur lab --check`, `ur reflect "<text>"`, `ur check <n>` | inside a topic |
-| `ur report`, `ur stats` | your progress as Markdown, local activity numbers |
-| `ur gui` | the roadmap app |
-| `ur doctor`, `ur verify --integrity` | health and integrity checks |
-| `ur install --target <dir>`, `ur uninstall --target <dir>` | install the skills into another agent folder |
-
-Exit codes: 0 ok, 1 error, 2 a gate failed, 3 a run halted after the repair limit.
+The skills call the engine `ur` with commands such as `ur start ur-learn`, `ur done`, `ur resume`, `ur lab --check` and `ur gui --detach`; exit code 2 means a gate failed. You can read every command with `ur --help`, but you should not need to: the skills are the interface.
 
 ## Troubleshooting
 
 | Problem | Fix |
 |---|---|
-| `ur: command not found` | add `~/.local/bin` to your PATH; the installer prints the exact line for your shell |
-| The agent does not know `/ur-start` | restart the agent so it loads new skills; check with `ur where` that the skills are in its folder |
-| `ur gui` says Node.js is missing | install Node.js 20 or newer |
-| A lab gate keeps failing | run `ur lab --check`; each failing gate prints the file and the reason |
-| `ur verify --integrity` reports edited files | reinstall with the install command; your progress is kept |
-| Anything else | `ur doctor` prints each problem with its fix |
+| Your agent says `ur` is not found | add `~/.local/bin` to your PATH (the installer prints the exact line for your shell) and restart the agent |
+| The agent does not know `/ur-start` | restart the agent so it loads new skills; run the installer again with `--agent claude` or `--agent codex` |
+| `/ur-gui` says Node.js is missing | install Node.js 20 or newer |
+| A lab check keeps failing | ask your agent which check fails; each one names the file and the reason |
+| `/ur-doctor` reports edited skill files | run the install command again; your progress is kept |
+| Anything else | `/ur-doctor` finds each problem and its fix |
 
 ## Privacy
 

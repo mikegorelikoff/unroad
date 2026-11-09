@@ -11,7 +11,7 @@
   <a href="LICENSE"><img alt="License: Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-blue.svg"></a>
 </p>
 
-**unroad turns your coding agent into a mentor that teaches you to build software with AI agents.** Ten stages, 49 topics. Each topic is a short lesson, a quiz, a hands-on lab in your own repository, a reflection and a review. The agent leads you one step at a time, and a small CLI checks your work in code, so "done" means done.
+**unroad turns your coding agent into a mentor that teaches you to build software with AI agents.** Ten stages, 49 topics. Each topic is a short lesson, a quiz, a hands-on lab in your own repository, a reflection and a review. You talk to your agent; it leads you one step at a time, and a small engine it runs checks your work in code, so "done" means done.
 
 ## Install
 
@@ -33,8 +33,8 @@ irm https://github.com/mikegorelikoff/unroad/releases/latest/download/install.ps
 
 That is all. The installer:
 
-- downloads the `ur` binary for your machine and checks it against the release's SHA-256 sums before installing anything;
-- puts `ur` in `~/.local/bin` (Windows: `%LOCALAPPDATA%\unroad\bin`, added to your PATH);
+- downloads the engine your agent uses (`ur`, one small binary) and checks it against the release's SHA-256 sums before installing anything;
+- puts it in `~/.local/bin` (Windows: `%LOCALAPPDATA%\unroad\bin`, added to your PATH);
 - installs the roadmap web app into `~/.unroad/web`;
 - installs the six skills into every agent it finds: Claude Code (`~/.claude/skills`) and Codex (`~/.codex/skills`).
 
@@ -45,7 +45,7 @@ No root, no Python, no package managers. The web app needs [Node.js](https://nod
 1. Open your agent (Claude Code, Codex or any agent that supports Agent Skills) in a repository you work on.
 2. Type **`/ur-start`**. It asks your goal, how many hours a week you have, your level, and which repository to use for labs, then lets you skip what you already know.
 3. Type **`/ur-learn`**. Your first topic starts: the agent explains the lesson in terms of your project, quizzes you, coaches you through a real lab, and only moves on when the checks pass.
-4. Run **`ur gui`** in a terminal to see the whole roadmap in your browser. It updates live while you learn.
+4. Type **`/ur-gui`** to open the whole roadmap in your browser. It updates live while you learn.
 
 Come back any time with `/ur-learn`. Your progress is saved, so a new session picks up exactly where you stopped.
 
@@ -71,16 +71,16 @@ Every topic links to the best material on the subject: official documentation, s
 ```
 1 lesson      the mentor explains it with your project as the example, then checks you understood
 2 quiz        two questions, one at a time; explanations after you answer
-3 lab         you change real files in your repository; ur checks them on disk
+3 lab         you change real files in your repository; the agent checks them on disk
 4 reflection  what you did and what you will do differently, in your words
 5 review      a short checklist you confirm honestly
 ```
 
-Labs are real work, not exercises on the side. You will write an `AGENTS.md`, add a hook, record architecture decisions, write acceptance criteria, set up an AI reviewer in CI and more. Each lab has gates that `ur` checks in code: the file exists, every placeholder is filled in, a command succeeds, a size limit holds. When a gate fails, you get the exact reason.
+Labs are real work, not exercises on the side. You will write an `AGENTS.md`, add a hook, record architecture decisions, write acceptance criteria, set up an AI reviewer in CI and more. When you say you are done, your agent checks the lab in code: the file exists, every placeholder is filled in, a command succeeds, a size limit holds. When a check fails, you get the exact reason and fix it.
 
 ## The roadmap app
 
-Run `ur gui` and your browser opens the roadmap: every stage and topic, what is done, what is current, and each topic as an interactive page with the lesson, the quiz, the lab checks and the checklist.
+Type `/ur-gui` in your agent and your browser opens the roadmap: every stage and topic, what is done, what is current, and each topic as an interactive page with the lesson, the quiz, the lab checks and the checklist.
 
 <p align="center">
   <img src="assets/roadmap-light.png" alt="The roadmap: ten stages with their topics" width="860">
@@ -103,18 +103,9 @@ You can learn entirely in the browser, entirely in your agent, or mix both: they
 | `/ur-flow` | not sure which one? describe what you want and it picks |
 | `/ur-doctor` | check that everything is installed and working |
 
-## The `ur` command
+## What runs under the hood
 
-You rarely need it directly, because the skills call it for you. When you want it:
-
-```bash
-ur                    # where you are and what to do next
-ur gui                # open the roadmap app
-ur list               # all topics and their status
-ur report             # a Markdown summary of your progress and reflections
-ur doctor             # check the installation
-ur --help             # everything else
-```
+You never need to type anything but the skills above. Under the hood your agent drives a small engine called `ur`: it serves the mentor one step at a time, checks quiz answers and labs in code, saves your progress and runs the roadmap app. Because the checks are code, the agent cannot skip a step or mark work done that is not done, and a new session always resumes where you stopped.
 
 ## Your data stays on your machine
 
@@ -140,7 +131,7 @@ Add `--purge` to delete your progress as well.
 
 **Can a team use it?** Yes. Each person installs it and learns in their own repository; the last stage, *Leading the change*, is about bringing these practices to a team.
 
-**Something broke.** Run `/ur-doctor` in your agent or `ur doctor` in a terminal. It prints what is wrong and the exact fix.
+**Something broke.** Type `/ur-doctor` in your agent. It finds what is wrong and fixes what it safely can.
 
 More detail: [the guide](GUIDE.md).
 

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" role="img" aria-label="Terminal: the unroad installer">
-  <rect width="1000" height="430" rx="14" fill="#141416"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="452" viewBox="0 0 1000 452" role="img" aria-label="Terminal: the unroad installer">
+  <rect width="1000" height="452" rx="14" fill="#141416"/>
   <circle cx="26" cy="24" r="6" fill="#3F3F46"/><circle cx="46" cy="24" r="6" fill="#3F3F46"/><circle cx="66" cy="24" r="6" fill="#3F3F46"/>
   <g xml:space="preserve" style="white-space:pre" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#E4E4E7">
     <text xml:space="preserve" x="28" y="66"><tspan fill="#A1A1AA">$</tspan> curl -fsSL https://github.com/mikegorelikoff/unroad/releases/latest/download/install.sh | sh</text>
@@ -13,8 +13,9 @@
     <text xml:space="preserve" x="28" y="274"><tspan fill="#4CC9A0">✓</tspan> <tspan fill="#A1A1AA">skills    </tspan> 6 skills → ~/.claude/skills</text>
     <text xml:space="preserve" x="28" y="296"><tspan fill="#4CC9A0">✓</tspan> <tspan fill="#A1A1AA">node      </tspan> v22.11.0 for the web app</text>
     <text xml:space="preserve" x="28" y="334" font-weight="700">Next</text>
-    <text xml:space="preserve" x="28" y="358"><tspan fill="#FB923C">  /ur-start </tspan><tspan fill="#A1A1AA">     in your agent: set up your goal, level and lab repository</tspan></text>
-    <text xml:space="preserve" x="28" y="380"><tspan fill="#FB923C">  ur gui    </tspan><tspan fill="#A1A1AA">     open the roadmap in your browser</tspan></text>
-    <text xml:space="preserve" x="28" y="402"><tspan fill="#FB923C">  ur        </tspan><tspan fill="#A1A1AA">     where you are and what to do next</tspan></text>
+    <text xml:space="preserve" x="28" y="358" fill="#A1A1AA">  Open your agent in a repository you work on and type:</text>
+    <text xml:space="preserve" x="28" y="380"><tspan fill="#FB923C">    /ur-start</tspan><tspan fill="#A1A1AA">   set up your goal, level and lab repository</tspan></text>
+    <text xml:space="preserve" x="28" y="402"><tspan fill="#FB923C">    /ur-learn</tspan><tspan fill="#A1A1AA">   learn the next topic</tspan></text>
+      <text xml:space="preserve" x="28" y="424"><tspan fill="#FB923C">    /ur-gui</tspan><tspan fill="#A1A1AA">     open the roadmap in your browser</tspan></text>
   </g>
 </svg>

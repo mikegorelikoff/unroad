@@ -308,7 +308,8 @@ case ":${PATH:-}:" in
     say "" ;;
 esac
 say "  ${C_B}Next${C_0}"
-say "    ${C_SIG}/ur-start${C_0}       ${C_DIM}in your agent: set up your goal, level and lab repository${C_0}"
-say "    ${C_SIG}ur gui${C_0}          ${C_DIM}open the roadmap in your browser${C_0}"
-say "    ${C_SIG}ur${C_0}              ${C_DIM}where you are and what to do next${C_0}"
+say "  ${C_DIM}Open your agent (Claude Code, Codex) in a repository you work on and type:${C_0}"
+say "    ${C_SIG}/ur-start${C_0}       ${C_DIM}set up your goal, level and lab repository${C_0}"
+say "    ${C_SIG}/ur-learn${C_0}       ${C_DIM}learn the next topic${C_0}"
+say "    ${C_SIG}/ur-gui${C_0}         ${C_DIM}open the roadmap in your browser${C_0}"
 say ""

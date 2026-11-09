@@ -127,8 +127,10 @@ try {
   }
   Write-Host ''
   Write-Host ("  {0}" -f (C '1' 'Next'))
-  Write-Host ("    {0}       {1}" -f (C '38;5;208' '/ur-start'), (C '2' 'in your agent: set up your goal, level and lab repository'))
-  Write-Host ("    {0}          {1}" -f (C '38;5;208' 'ur gui'), (C '2' 'open the roadmap in your browser'))
+  Write-Host ("  {0}" -f (C '2' 'Open your agent (Claude Code, Codex) in a repository you work on and type:'))
+  Write-Host ("    {0}       {1}" -f (C '38;5;208' '/ur-start'), (C '2' 'set up your goal, level and lab repository'))
+  Write-Host ("    {0}       {1}" -f (C '38;5;208' '/ur-learn'), (C '2' 'learn the next topic'))
+  Write-Host ("    {0}         {1}" -f (C '38;5;208' '/ur-gui'), (C '2' 'open the roadmap in your browser'))
   Write-Host ''
 } finally {
   Remove-Item -Recurse -Force $tmp -ErrorAction SilentlyContinue
