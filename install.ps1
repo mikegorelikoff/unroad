@@ -1,10 +1,13 @@
 # unroad installer for Windows: the ur binary, the roadmap web app and the ur-* skills.
 #
 #   irm https://github.com/mikegorelikoff/unroad/releases/latest/download/install.ps1 | iex
+#   $env:UR_LICENSE = 'UR1-...'; irm .../install.ps1 | iex
+#   & ([scriptblock]::Create((irm .../install.ps1))) -License 'UR1-...'
 #
 # Environment:
 #   UR_VERSION       release tag (default: latest)
 #   UR_INSTALL_DIR   where to put ur.exe (default: %LOCALAPPDATA%\unroad\bin)
+#   UR_LICENSE       your unroad license key (UR1-...); or pass -License KEY when you run a saved copy of this file
 #   UR_AGENT         claude, codex or all (default: detected)
 #   UR_NO_WEB        set to 1 to skip the web app
 #   UR_NO_AGENTS_MD  set to 1 to leave ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md untouched
@@ -12,6 +15,7 @@
 #   GITHUB_TOKEN     token for private or internal repositories (or log in with gh)
 #
 # Every archive is checked against the release's SHA256SUMS before anything is installed.
+param([string]$License = $env:UR_LICENSE)
 $ErrorActionPreference = 'Stop'
 $ProgressPreference = 'SilentlyContinue'
 
@@ -134,6 +138,12 @@ try {
   } else { Info 'hooks' 'this release has no agent hooks yet; skipped' }
   if ($env:UR_NO_AGENTS_MD -eq '1') { & $ur agents-md --global --decline *> $null }
 
+  if ($License) {
+    # the key is passed only to `ur license`; it is never printed
+    & $ur license $License *> $null
+    if ($LASTEXITCODE -eq 0) { Ok 'license' 'the course is unlocked' } else { Warn 'license' 'the key was not accepted; install is complete. Open your agent and type /ur-start: it asks for the key again' }
+  }
+
   if (Get-Command node -ErrorAction SilentlyContinue) { Ok 'node' "$(node --version) for the web app" }
   else { Warn 'node' 'not found; the web app needs Node.js 20+ (https://nodejs.org)' }
 
@@ -145,7 +155,7 @@ try {
   Write-Host ''
   Write-Host ("  {0}" -f (C '1' 'Next'))
   Write-Host ("  {0}" -f (C '2' 'Open your agent (Claude Code, Codex) in a repository you work on and type:'))
-  Write-Host ("    {0}       {1}" -f (C '38;5;208' '/ur-start'), (C '2' 'set up your goal, level and lab repository'))
+  Write-Host ("    {0}       {1}" -f (C '38;5;208' '/ur-start'), (C '2' 'enter your license key, set up your goal, level and lab repository'))
   Write-Host ("    {0}       {1}" -f (C '38;5;208' '/ur-learn'), (C '2' 'learn the next topic'))
   Write-Host ("    {0}         {1}" -f (C '38;5;208' '/ur-gui'), (C '2' 'open the roadmap in your browser'))
   Write-Host ''

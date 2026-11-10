@@ -14,7 +14,7 @@
     ]
   },
   "curriculum-map": {
-    "alt": "The curriculum: ten stages in order, 01 Foundations (4 topics); 02 Prompting and context (4 topics); 03 Agent setup (6 topics); 04 Specs before code (6 topics); 05 BMAD Method (5 topics); 06 The build loop (5 topics); 07 Quality (4 topics); 08 Security (3 topics); 09 Harness and delivery (4 topics); 10 Leading the change (8 topics). 49 topics in all, each at one of three levels: foundation, practitioner or expert; the map shows how many topics of each level every stage has.",
+    "alt": "The curriculum: eleven stages in order, 01 Foundations (4 topics); 02 Prompting and context (4 topics); 03 Agent setup (6 topics); 04 Specs before code (6 topics); 05 BMAD Method (5 topics); 06 The build loop (5 topics); 07 Quality (4 topics); 08 Security (3 topics); 09 Harness and delivery (4 topics); 10 Leading the change (8 topics); 11 AI transformation (8 topics). 57 topics in all, each at one of three levels: foundation, practitioner or expert; the map shows how many topics of each level every stage has.",
     "pages": [
       "Home",
       "Curriculum"

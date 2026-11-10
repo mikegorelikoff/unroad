@@ -10,6 +10,7 @@
 #   --bin <dir>         where to put ur (default: ~/.local/bin)       env UR_INSTALL_DIR
 #   --agent <name>      claude, codex or all (default: detected)
 #   --target <dir>      install the skills into this folder instead
+#   --license <key>     your unroad license key (UR1-...); unlocks the course  env UR_LICENSE
 #   --no-web            skip the web app
 #   --no-skills         skip the skills
 #   --no-agents-md      do not add the unroad section to ~/.claude/CLAUDE.md and ~/.codex/AGENTS.md
@@ -29,6 +30,7 @@ BASE="${UR_BASE_URL:-https://github.com/$REPO/releases}"
 VERSION="${UR_VERSION:-latest}"
 DEST="${UR_INSTALL_DIR:-${HOME:-.}/.local/bin}"
 UNROAD_HOME="${UNROAD_HOME:-${HOME:-.}/.unroad}"
+LICENSE_KEY="${UR_LICENSE:-}"
 AGENT=""
 TARGET_DIR=""
 WITH_WEB=1
@@ -71,6 +73,7 @@ while [ $# -gt 0 ]; do
     --bin) DEST="${2:?--bin needs a folder}"; shift 2 ;;
     --agent) AGENT="${2:?--agent needs claude, codex or all}"; shift 2 ;;
     --target) TARGET_DIR="${2:?--target needs a folder}"; shift 2 ;;
+    --license) LICENSE_KEY="${2:?--license needs your license key}"; shift 2 ;;
     --no-web) WITH_WEB=0; shift ;;
     --no-skills) WITH_SKILLS=0; shift ;;
     --no-agents-md) WITH_AGENTS_MD=0; shift ;;
@@ -79,7 +82,7 @@ while [ $# -gt 0 ]; do
     --uninstall) UNINSTALL=1; shift ;;
     --purge) PURGE=1; shift ;;
     --print-target) PRINT_TARGET=1; shift ;;
-    -h | --help) sed -n '2,24p' "$0" 2>/dev/null | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -h | --help) sed -n '2,25p' "$0" 2>/dev/null | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) die "unknown option '$1' (see --help)" ;;
   esac
 done
@@ -323,6 +326,15 @@ if [ "$WITH_SKILLS" = 1 ]; then
   fi
 fi
 
+if [ -n "$LICENSE_KEY" ]; then
+  # the key is passed only to `ur license`; it is never printed
+  if [ "$UNINSTALL" = 0 ] && out=$("$DEST/ur" license "$LICENSE_KEY" 2>&1); then
+    ok "license" "the course is unlocked"
+  else
+    warn "license" "the key was not accepted; install is complete. Open your agent and type /ur-start: it asks for the key again"
+  fi
+fi
+
 if command -v node >/dev/null 2>&1; then
   major=$(node --version 2>/dev/null | sed 's/^v//; s/\..*//')
   if [ "${major:-0}" -ge 20 ] 2>/dev/null; then ok "node" "$(node --version) for the web app"
@@ -347,7 +359,7 @@ case ":${PATH:-}:" in
 esac
 say "  ${C_B}Next${C_0}"
 say "  ${C_DIM}Open your agent (Claude Code, Codex) in a repository you work on and type:${C_0}"
-say "    ${C_SIG}/ur-start${C_0}       ${C_DIM}set up your goal, level and lab repository${C_0}"
+say "    ${C_SIG}/ur-start${C_0}       ${C_DIM}enter your license key, set up your goal, level and lab repository${C_0}"
 say "    ${C_SIG}/ur-learn${C_0}       ${C_DIM}learn the next topic${C_0}"
 say "    ${C_SIG}/ur-gui${C_0}         ${C_DIM}open the roadmap in your browser${C_0}"
 say ""

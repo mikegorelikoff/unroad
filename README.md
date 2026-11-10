@@ -11,7 +11,7 @@
   <a href="LICENSE"><img alt="License: Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-blue.svg"></a>
 </p>
 
-**unroad turns your coding agent into a mentor that teaches you to build software with AI agents.** Ten stages, 49 topics. Each topic is a short lesson, a quiz, a hands-on lab in your own repository, a reflection and a review. You talk to your agent; it leads you one step at a time, and a small engine it runs checks your work in code, so "done" means done.
+**unroad turns your coding agent into a mentor that teaches you to build software with AI agents.** Eleven stages, 57 topics. Each topic is a short lesson, a quiz, a hands-on lab in your own repository, a reflection and a review. You talk to your agent; it leads you one step at a time, and a small engine it runs checks your work in code, so "done" means done.
 
 ## Install
 
@@ -31,13 +31,22 @@ irm https://github.com/mikegorelikoff/unroad/releases/latest/download/install.ps
   <img src="assets/install.svg" alt="The installer: checks the download, installs ur, the web app and the skills" width="860">
 </p>
 
-That is all. The installer:
+If you have a license key, pass it to the installer and the course is unlocked straight away (otherwise `/ur-start` asks for it):
+
+```bash
+curl -fsSL https://github.com/mikegorelikoff/unroad/releases/latest/download/install.sh | sh -s -- --license <your-key>
+```
+
+On Windows set `$env:UR_LICENSE = "<your-key>"` before the install command.
+
+The installer:
 
 - downloads the engine your agent uses (`ur`, one small binary) and checks it against the release's SHA-256 sums before installing anything;
 - puts it in `~/.local/bin` (Windows: `%LOCALAPPDATA%\unroad\bin`, added to your PATH);
 - installs the roadmap web app into `~/.unroad/web`;
 - installs the six skills into every agent it finds: Claude Code (`~/.claude/skills`) and Codex (`~/.codex/skills`);
-- adds a short, clearly marked unroad section to your agents' instructions so every session knows how to work with it (your own text is never touched; `--no-agents-md` skips it).
+- adds a short, clearly marked unroad section to your agents' instructions so every session knows how to work with it (your own text is never touched; `--no-agents-md` skips it);
+- adds agent hooks that keep your progress honest: the agent is reminded where you are when a session starts, it cannot edit your progress files directly, and it is nudged to record a step once its checks pass (`--no-hooks` skips them).
 
 No root, no Python, no package managers. The web app needs [Node.js](https://nodejs.org) 20 or newer; everything else works without it.
 
@@ -55,7 +64,7 @@ Come back any time with `/ur-learn`. Your progress is saved, so a new session pi
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/wiki/curriculum-map-dark.svg">
-    <img src="assets/wiki/curriculum-map-light.svg" alt="The ten stages of the curriculum" width="860">
+    <img src="assets/wiki/curriculum-map-light.svg" alt="The stages of the curriculum" width="860">
   </picture>
 </p>
 
@@ -71,8 +80,9 @@ Come back any time with `/ur-learn`. Your progress is saved, so a new session pi
 | 08 | **Security** | OWASP for LLMs and agents, prompt injection, secrets and supply chain |
 | 09 | **Harness and delivery** | guides and sensors, agents in CI, traceable commits, parallel agents |
 | 10 | **Leading the change** | a story with evidence, pilots, working agreements, coaching, AI policy, metrics, team skills |
+| 11 | **AI transformation** | strategy, operating model, AI roles, AI-native teams, scaling adoption, governance, measuring value, a transformation roadmap |
 
-Every topic links to the best material on the subject: official documentation, standards and practical guides. The programme outline is in the [wiki](https://github.com/mikegorelikoff/unroad/wiki/Curriculum); the lessons themselves are in the course.
+Every topic links to the best material on the subject: official documentation, standards and practical guides, and summarises what Anthropic and OpenAI publish about how their own teams work. The programme outline is in the [wiki](https://github.com/mikegorelikoff/unroad/wiki/Curriculum); the lessons themselves are in the course.
 
 ## How a topic works
 
@@ -98,7 +108,7 @@ Labs are real work, not exercises on the side. You will write an `AGENTS.md`, ad
 Type `/ur-gui` in your agent and your browser opens the roadmap: every stage and topic, what is done, what is current, and each topic as an interactive page with the lesson, the quiz, the lab checks and the checklist.
 
 <p align="center">
-  <img src="assets/roadmap-light.png" alt="The roadmap: ten stages with their topics" width="860">
+  <img src="assets/roadmap-light.png" alt="The roadmap: every stage with its topics" width="860">
 </p>
 
 <p align="center">
@@ -151,7 +161,9 @@ Add `--purge` to delete your progress as well.
 
 **Do I need to finish everything?** No. `/ur-start` lets you skip what you know, and you can choose to see only foundation or practitioner topics.
 
-**Can a team use it?** Yes. Each person installs it and learns in their own repository; the last stage, *Leading the change*, is about bringing these practices to a team.
+**Can a team use it?** Yes. Each person installs it and learns in their own repository; the last two stages, *Leading the change* and *AI transformation*, are about bringing these practices to a team and to a whole company.
+
+**Why does it need a license key?** The installer and these docs are open; the course itself (lessons, labs, quizzes) is proprietary and ships encrypted inside the engine. The key unlocks it on your machine, offline: nothing is checked over the network.
 
 **Something broke.** Type `/ur-doctor` in your agent. It finds what is wrong and fixes what it safely can.
 
@@ -159,4 +171,4 @@ More detail: [the guide](GUIDE.md) and the [wiki](https://github.com/mikegorelik
 
 ## License
 
-[Apache-2.0](LICENSE).
+The installer scripts and documentation in this repository: [Apache-2.0](LICENSE). The course content is proprietary and is not covered by that license.

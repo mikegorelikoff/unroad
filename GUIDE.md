@@ -12,17 +12,27 @@ curl -fsSL https://github.com/mikegorelikoff/unroad/releases/latest/download/ins
 
 | Option | Does |
 |---|---|
-| `--version <tag>` | install a specific release, for example `v0.1.1` (default: latest) |
+| `--version <tag>` | install a specific release, for example `v0.1.2` (default: latest) |
 | `--agent claude\|codex\|all` | which agents get the skills (default: every agent found) |
 | `--target <dir>` | install the skills into this folder instead, for example a project's `.agents/skills` |
 | `--bin <dir>` | where to put `ur` (default: `~/.local/bin`) |
 | `--no-web` | skip the web app |
 | `--no-skills` | install only the engine |
+| `--license <key>` | unlock the course with your license key (`UR1-...`) |
 | `--no-agents-md` | do not add the unroad section to your agents' global instructions |
+| `--no-hooks` | do not add agent hooks |
 | `--uninstall` | remove `ur`, the web app and the skills; keep progress |
 | `--purge` | with `--uninstall`, also delete `~/.unroad` |
 
-Environment variables: `UR_VERSION`, `UR_INSTALL_DIR`, `UNROAD_HOME` (default `~/.unroad`). On Windows set `UR_VERSION`, `UR_INSTALL_DIR`, `UR_AGENT`, `UR_NO_WEB=1` or `UR_NO_AGENTS_MD=1` before running the PowerShell command.
+Environment variables: `UR_VERSION`, `UR_INSTALL_DIR`, `UR_LICENSE`, `UNROAD_HOME` (default `~/.unroad`). On Windows set `UR_VERSION`, `UR_INSTALL_DIR`, `UR_AGENT`, `UR_NO_WEB=1`, `UR_NO_AGENTS_MD=1`, `UR_NO_HOOKS=1` or `UR_LICENSE` before running the PowerShell command.
+
+### License key
+
+The course content is proprietary and ships encrypted inside the engine; the installer and these docs are open. Pass your key with `--license` (or `UR_LICENSE`), or skip it and `/ur-start` will ask you for it. The key is checked locally and offline. Without a key you can still see the outline of the programme in the roadmap app.
+
+### Agent hooks
+
+The installer adds three small hooks to Claude Code (`~/.claude/settings.json`) and Codex (`~/.codex/hooks.json`): at session start the agent is told where you are; before a tool runs, the agent is stopped from editing your progress files or the installed skills directly; and when it is about to stop while a step's checks already pass, it is reminded to record the step. Your other settings and hooks are not touched, and a backup is kept the first time. Codex asks you to trust new hooks once in `/hooks`. `--no-hooks` skips them; uninstall removes them. The hooks guard against mistakes; they are not a security boundary.
 
 ### The managed instructions section
 

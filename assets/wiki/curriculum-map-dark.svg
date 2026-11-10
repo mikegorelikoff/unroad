@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690" role="img" aria-label="The curriculum: ten stages in order, 01 Foundations (4 topics); 02 Prompting and context (4 topics); 03 Agent setup (6 topics); 04 Specs before code (6 topics); 05 BMAD Method (5 topics); 06 The build loop (5 topics); 07 Quality (4 topics); 08 Security (3 topics); 09 Harness and delivery (4 topics); 10 Leading the change (8 topics). 49 topics in all, each at one of three levels: foundation, practitioner or expert; the map shows how many topics of each level every stage has.">
-  <title>The curriculum: ten stages in order, 01 Foundations (4 topics); 02 Prompting and context (4 topics); 03 Agent setup (6 topics); 04 Specs before code (6 topics); 05 BMAD Method (5 topics); 06 The build loop (5 topics); 07 Quality (4 topics); 08 Security (3 topics); 09 Harness and delivery (4 topics); 10 Leading the change (8 topics). 49 topics in all, each at one of three levels: foundation, practitioner or expert; the map shows how many topics of each level every stage has.</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-label="The curriculum: eleven stages in order, 01 Foundations (4 topics); 02 Prompting and context (4 topics); 03 Agent setup (6 topics); 04 Specs before code (6 topics); 05 BMAD Method (5 topics); 06 The build loop (5 topics); 07 Quality (4 topics); 08 Security (3 topics); 09 Harness and delivery (4 topics); 10 Leading the change (8 topics); 11 AI transformation (8 topics). 57 topics in all, each at one of three levels: foundation, practitioner or expert; the map shows how many topics of each level every stage has.">
+  <title>The curriculum: eleven stages in order, 01 Foundations (4 topics); 02 Prompting and context (4 topics); 03 Agent setup (6 topics); 04 Specs before code (6 topics); 05 BMAD Method (5 topics); 06 The build loop (5 topics); 07 Quality (4 topics); 08 Security (3 topics); 09 Harness and delivery (4 topics); 10 Leading the change (8 topics); 11 AI transformation (8 topics). 57 topics in all, each at one of three levels: foundation, practitioner or expert; the map shows how many topics of each level every stage has.</title>
   <defs><marker id="ah-muted" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#A1A1AA"/></marker><marker id="ah-accent" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F97316"/></marker><marker id="ah-pass_" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4CC9A0"/></marker><marker id="ah-fail" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#F27A7F"/></marker><marker id="ah-strong" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3F3F46"/></marker><marker id="ah-ink" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#FAFAF9"/></marker></defs>
-  <rect width="1200" height="690" fill="#0B0B0C"/>
+  <rect width="1200" height="730" fill="#0B0B0C"/>
   <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" xml:space="preserve" style="white-space:pre">
   <text x="48" y="58" font-size="26" fill="#FAFAF9" font-weight="600" letter-spacing="-0.4">The curriculum</text>
-  <text x="48" y="88" font-size="17" fill="#A1A1AA">Ten stages, 49 topics. Each dot is one topic, placed in its level.</text>
-  <rect x="560" y="104" width="192" height="516" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <text x="48" y="88" font-size="17" fill="#A1A1AA">Eleven stages, 57 topics. Each dot is one topic, placed in its level.</text>
+  <rect x="560" y="104" width="192" height="562" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
   <text x="576" y="132" font-size="16" fill="#FAFAF9" font-weight="600">Foundation</text>
-  <rect x="760" y="104" width="192" height="516" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="760" y="104" width="192" height="562" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
   <text x="776" y="132" font-size="16" fill="#FAFAF9" font-weight="600">Practitioner</text>
-  <rect x="960" y="104" width="192" height="516" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
+  <rect x="960" y="104" width="192" height="562" rx="12" fill="#18181B" stroke="#27272A" stroke-width="1.2"/>
   <text x="976" y="132" font-size="16" fill="#FAFAF9" font-weight="600">Expert</text>
   <text x="104" y="132" font-size="15" fill="#A1A1AA">Stage</text>
   <text x="520" y="132" font-size="15" fill="#A1A1AA" text-anchor="end">Topics</text>
-  <path d="M84 173.0 V587.0" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 173.0 V633.0" fill="none" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="84" cy="173.0" r="7" fill="#F97316"/>
   <text x="104" y="179.0" font-size="16" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">01</text>
   <text x="140" y="179.0" font-size="18" fill="#FAFAF9" font-weight="600">Foundations</text>
@@ -112,6 +112,19 @@
   <circle cx="1056" cy="587.0" r="5.5" fill="#F97316"/>
   <circle cx="1074" cy="587.0" r="5.5" fill="#F97316"/>
   <circle cx="1092" cy="587.0" r="5.5" fill="#F97316"/>
-  <text x="48" y="660" font-size="15" fill="#A1A1AA">You can choose to see only foundation, or foundation and practitioner topics, and skip what you already know.</text>
+  <path d="M100 610 H1152" fill="none" stroke="#27272A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="84" cy="633.0" r="7" fill="#141416" stroke="#3F3F46" stroke-width="1.5"/>
+  <text x="104" y="639.0" font-size="16" fill="#FB923C" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600">11</text>
+  <text x="140" y="639.0" font-size="18" fill="#FAFAF9" font-weight="600">AI transformation</text>
+  <text x="520" y="639.0" font-size="15" fill="#A1A1AA" text-anchor="end">8 topics</text>
+  <circle cx="847" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="865" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="1011" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="1029" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="1047" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="1065" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="1083" cy="633.0" r="5.5" fill="#F97316"/>
+  <circle cx="1101" cy="633.0" r="5.5" fill="#F97316"/>
+  <text x="48" y="706" font-size="15" fill="#A1A1AA">You can choose to see only foundation, or foundation and practitioner topics, and skip what you already know.</text>
   </g>
 </svg>
